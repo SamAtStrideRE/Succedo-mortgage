@@ -1,11 +1,13 @@
 .hero {
-  background-image: url("../../../../public/images/banner.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../../public/images/landing.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 90vh;
   width: 100%;
+  position: relative;
 }
+
 .hero .container {
   padding-top: 15%;
 }

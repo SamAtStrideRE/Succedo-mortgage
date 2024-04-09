@@ -6,7 +6,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #fff;
+  background-color: #000000;
 }
 .container {
   max-width: 80%;
@@ -28,7 +28,7 @@ ul {
 button {
   border-radius: 5px;
   padding: 17px 30px;
-  background: #27ae60;
+  background: #2f4794;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -105,7 +105,7 @@ img {
   grid-gap: 30px;
 }
 .btn3 {
-  background: #ff6922;
+  background: #cc0000;
   border-radius: 50px;
 }
 .btn4 {
@@ -115,7 +115,7 @@ img {
 .btn5 {
   border-radius: 50px;
   padding: 20px 40px;
-  color: #27ae60;
+  color: #2f4794;
   font-size: 20px;
   font-weight: 400;
   border: 5px solid #27ae601f;
