@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {footer.map((val) => (
+          {/* {footer.map((val) => (
             <div className='box'>
               <h3>{val.title}</h3>
               <ul>
@@ -41,11 +41,11 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-          ))}
+          ))} */}
         </div>
       </footer>
       <div className='legal'>
-        <span>© 2021 RentUP. Designd By GorkCoder.</span>
+        <span>© 2024 Succedo Mortgage.</span>
       </div>
     </>
   )
