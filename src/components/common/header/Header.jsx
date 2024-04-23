@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import {
   FiAlignRight,
-  FiXCircle,
+  // FiXCircle,
   FiChevronDown,
   FiChevronUp,
 } from "react-icons/fi";
@@ -76,14 +76,14 @@ const Header = () => {
               to={`/About`}
             >
               {" "}
-              About{" "}
+              About Us{" "}
             </NavLink>{" "}
           </li>
           <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows">
             {" "}
             <Link to="#" onClick={setMenuHandler}>
               {" "}
-              Shop {isMenu ? <FiChevronDown /> : <FiChevronUp />}{" "}
+              Mortgage Products {isMenu ? <FiChevronDown /> : <FiChevronUp />}{" "}
             </Link>
             {isMenu && (
               <ul className={boxClassSubMenu.join(" ")}>
@@ -95,7 +95,7 @@ const Header = () => {
                     to={`/Online`}
                   >
                     {" "}
-                    Online Shop{" "}
+                    Fixed-rate Mortgages{" "}
                   </NavLink>{" "}
                 </li>
                 <li>
@@ -105,12 +105,106 @@ const Header = () => {
                     to={`/Offline`}
                   >
                     {" "}
-                    Offline Shop{" "}
+                    FHA Loans{" "}
+                  </NavLink>{" "}
+                </li>
+                <li>
+                  <NavLink
+                    onClick={toggleClass}
+                    activeClassName="is-active"
+                    to={`/Offline`}
+                  >
+                    {" "}
+                    VA Loans{" "}
                   </NavLink>{" "}
                 </li>
               </ul>
             )}
           </li>
+          <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows">
+          {" "}
+          <Link to="#" onClick={setMenuHandler}>
+            {" "}
+            Rates {isMenu ? <FiChevronDown /> : <FiChevronUp />}{" "}
+          </Link>
+          {isMenu && (
+            <ul className={boxClassSubMenu.join(" ")}>
+              <li>
+                {" "}
+                <NavLink
+                  onClick={toggleClass}
+                  activeClassName="is-active"
+                  to={`/Online`}
+                >
+                  {" "}
+                  Current rates{" "}
+                </NavLink>{" "}
+              </li>
+              <li>
+                <NavLink
+                  onClick={toggleClass}
+                  activeClassName="is-active"
+                  to={`/Offline`}
+                >
+                  {" "}
+                  Factors Affecting Rates{" "}
+                </NavLink>{" "}
+              </li>
+              <li>
+                <NavLink
+                  onClick={toggleClass}
+                  activeClassName="is-active"
+                  to={`/Offline`}
+                >
+                  {" "}
+                  Rate Trends{" "}
+                </NavLink>{" "}
+              </li>
+            </ul>
+          )}
+        </li>
+          <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows">
+          {" "}
+          <Link to="#" onClick={setMenuHandler}>
+            {" "}
+            Apply Here {isMenu ? <FiChevronDown /> : <FiChevronUp />}{" "}
+          </Link>
+          {isMenu && (
+            <ul className={boxClassSubMenu.join(" ")}>
+              <li>
+                {" "}
+                <NavLink
+                  onClick={toggleClass}
+                  activeClassName="is-active"
+                  to={`/Online`}
+                >
+                  {" "}
+                  Online Application{" "}
+                </NavLink>{" "}
+              </li>
+              <li>
+                <NavLink
+                  onClick={toggleClass}
+                  activeClassName="is-active"
+                  to={`/Offline`}
+                >
+                  {" "}
+                  Document Checklist{" "}
+                </NavLink>{" "}
+              </li>
+              <li>
+                <NavLink
+                  onClick={toggleClass}
+                  activeClassName="is-active"
+                  to={`/Offline`}
+                >
+                  {" "}
+                  Application Process{" "}
+                </NavLink>{" "}
+              </li>
+            </ul>
+          )}
+        </li>
           <li className="menu-item ">
             <NavLink
               onClick={toggleClass}
