@@ -6,7 +6,7 @@ import {
   FiChevronDown,
   FiChevronUp,
 } from "react-icons/fi";
-import logo from "../../../images/logo.png";
+import logo from "../../../images/logo-light.png";
 import "./header.css";
 
 const Header = () => {
