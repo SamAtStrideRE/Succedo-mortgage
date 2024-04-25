@@ -27,29 +27,20 @@ export const nav = [
 export const featured = [
   {
     cover: "../images/hero/h1.png",
-    name: "Family House",
-    total: "122 Property",
+    name: "Best policy,Best Price",
+    // total: "122 Property",
   },
   {
     cover: "../images/hero/h2.png",
-    name: "House & Villa",
-    total: "155 Property",
+    name: "No hidden fees",
+    // total: "155 Property",
   },
   {
     cover: "../images/hero/h3.png",
-    name: "Apartment",
-    total: "300 Property",
+    name: "The savings never stop",
+    // total: "300 Property",
   },
-  {
-    cover: "../images/hero/h4.png",
-    name: "Office & Studio",
-    total: "80 Property",
-  },
-  {
-    cover: "../images/hero/h6.png",
-    name: "Villa & Condo",
-    total: "80 Property",
-  },
+  
 ]
 export const list = [
   {
@@ -129,56 +120,56 @@ export const awards = [
     name: "IITCA Green Award",
   },
 ]
-export const location = [
-  {
-    id: 1,
-    name: "New Orleans, Louisiana",
-    Villas: "12 Villas",
-    Apartments: "10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-1.png",
-  },
-  {
-    id: 2,
-    name: "Jerrsy, United State",
-    Villas: "12 Villas",
-    Apartments: "10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-2.png",
-  },
-  {
-    id: 3,
-    name: "Liverpool, London",
-    Villas: "12 Villas",
-    Apartments: " 10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-3.png",
-  },
-  {
-    id: 4,
-    name: "NewYork, United States",
-    Villas: "12 Villas",
-    Apartments: " 10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-4.png",
-  },
-  {
-    id: 5,
-    name: "Montreal, Canada",
-    Villas: "12 Villas",
-    Apartments: " 10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-5.png",
-  },
-  {
-    id: 6,
-    name: "California, USA",
-    Villas: "12 Villas",
-    Apartments: " 10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-6.png",
-  },
-]
+// export const location = [
+//   {
+//     id: 1,
+//     name: "New Orleans, Louisiana",
+//     Villas: "12 Villas",
+//     Apartments: "10 Apartments",
+//     Offices: "07 Offices",
+//     cover: "./images/location/city-1.png",
+//   },
+//   {
+//     id: 2,
+//     name: "Jerrsy, United State",
+//     Villas: "12 Villas",
+//     Apartments: "10 Apartments",
+//     Offices: "07 Offices",
+//     cover: "./images/location/city-2.png",
+//   },
+//   {
+//     id: 3,
+//     name: "Liverpool, London",
+//     Villas: "12 Villas",
+//     Apartments: " 10 Apartments",
+//     Offices: "07 Offices",
+//     cover: "./images/location/city-3.png",
+//   },
+//   {
+//     id: 4,
+//     name: "NewYork, United States",
+//     Villas: "12 Villas",
+//     Apartments: " 10 Apartments",
+//     Offices: "07 Offices",
+//     cover: "./images/location/city-4.png",
+//   },
+//   {
+//     id: 5,
+//     name: "Montreal, Canada",
+//     Villas: "12 Villas",
+//     Apartments: " 10 Apartments",
+//     Offices: "07 Offices",
+//     cover: "./images/location/city-5.png",
+//   },
+//   {
+//     id: 6,
+//     name: "California, USA",
+//     Villas: "12 Villas",
+//     Apartments: " 10 Apartments",
+//     Offices: "07 Offices",
+//     cover: "./images/location/city-6.png",
+//   },
+// ]
 export const team = [
   {
     list: "50",
