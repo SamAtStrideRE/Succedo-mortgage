@@ -67,11 +67,12 @@ header .toggle {
 } */
 
 .header__middle {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1.6rem;
-  background: rgb(11, 38, 51);
+  background: rgb(248, 248, 248);
 
   .header__middle__logo {
     img {
@@ -91,27 +92,37 @@ header .toggle {
     }
 
     .main-menu {
+      
+      a{
+        padding: 0.5rem;
+        background: white;
+        color:black;
+      }
       display: flex;
       column-gap: 2rem;
       align-items: center;
+      width: 100%;
       
 
       .sub__menus__arrows {
+        
         position: relative;
 
         a {
-        
+          
+          color:black;
           display: flex;
           align-items: center;
           column-gap: 0.2rem;
         }
 
         .sub__menus {
+          
           text-align: left;
           position: absolute;
-          font-size: 13px;
+          font-size: 15px;
           top: 3rem;
-          width: 3rem;
+          width: 100%;
           z-index: 2;
         }
       }
