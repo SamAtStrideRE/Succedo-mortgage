@@ -108,7 +108,7 @@ header .toggle {
       .sub__menus__arrows {
         
         position: relative;
-
+        
         a {
           
           color:black;
@@ -131,7 +131,7 @@ header .toggle {
   }
 
   a {
-    color: white;
+    color: rgb(255, 255, 255);
     
   }
 }
