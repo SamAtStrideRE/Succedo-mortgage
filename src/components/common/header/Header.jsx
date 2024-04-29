@@ -59,23 +59,23 @@ const Header = () => {
             </NavLink>
           </li>
           <li className="menu-item sub__menus__arrows">
-            <Link to="#" onClick={toggleSubmenu1}>
+            <Link to="" onClick={toggleSubmenu1}>
               Mortgage Products {isMenuSubMenu1 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
             {isMenuSubMenu1 && (
               <ul className="sub__menus">
                 <li>
-                  <NavLink activeClassName="is-active" to="/Online">
+                  <NavLink activeClassName="is-active" to="/FixRates">
                     Fixed-rate Mortgages
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="is-active" to="/Offline">
+                  <NavLink activeClassName="is-active" to="/FHA">
                     FHA Loans
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="is-active" to="/Offline">
+                  <NavLink activeClassName="is-active" to="/VA">
                     VA Loans
                   </NavLink>
                 </li>
@@ -89,17 +89,17 @@ const Header = () => {
             {isMenuSubMenu2 && (
               <ul className="sub__menus">
                 <li>
-                  <NavLink activeClassName="is-active" to="/Online">
+                  <NavLink activeClassName="is-active" to="/CurrentRates">
                     Current rates
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="is-active" to="/Offline">
+                  <NavLink activeClassName="is-active" to="/FAR">
                     Factors Affecting Rates
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="is-active" to="/Offline">
+                  <NavLink activeClassName="is-active" to="/RateTrends">
                     Rate Trends
                   </NavLink>
                 </li>
@@ -113,17 +113,17 @@ const Header = () => {
             {isMenuSubMenu3 && (
               <ul className="sub__menus">
                 <li>
-                  <NavLink activeClassName="is-active" to="/Online">
+                  <NavLink activeClassName="is-active" to="/OA">
                     Online Application
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="is-active" to="/Offline">
+                  <NavLink activeClassName="is-active" to="/DC">
                     Document Checklist
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="is-active" to="/Offline">
+                  <NavLink activeClassName="is-active" to="/AP">
                     Application Process
                   </NavLink>
                 </li>
