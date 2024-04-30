@@ -121,10 +121,7 @@ header .toggle {
           align-items: center;
           column-gap: 0.2rem;
         }
-        a:hover {
-          background-color: rgba(2, 45, 98, 0.166);
-          color: white;
-          }
+        
 
         .sub__menus {
           
@@ -134,6 +131,10 @@ header .toggle {
           top: 3.5rem;
           width: 100%;
           z-index: 2;
+          a:hover {
+            /* background-color: rgba(2, 45, 98, 0.166); */
+            color: white;
+            }
         }
       }
     }
