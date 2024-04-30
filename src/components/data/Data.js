@@ -28,16 +28,19 @@ export const featured = [
   {
     cover: "../images/hero/h1.png",
     name: "Best policy,Best Price",
+    body:"Offering exceptional value. Get premium policies at the most affordable pricing for your dream property"
     // total: "122 Property",
   },
   {
     cover: "../images/hero/h2.png",
     name: "No hidden fees",
+    body:"What you see is what you get!Transparency is our commitment. There are no hidden fees"
     // total: "155 Property",
   },
   {
     cover: "../images/hero/h3.png",
     name: "The savings never stop",
+    body:"Your financial journey is our priority. Experience ongoing savings with every step towards homeownership"
     // total: "300 Property",
   },
   

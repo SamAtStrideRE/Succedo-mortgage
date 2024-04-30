@@ -9,7 +9,7 @@ const FeaturedCard = () => {
           <div className='box' key={index}>
             <img src={items.cover} alt='' />
             <h4>{items.name}</h4>
-            <label>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, autem. Quam consequatur veniam illo sunt nihil quas soluta, quos maxime!</label>
+            <label>{items.body}</label>
           </div>
         ))}
       </div>
