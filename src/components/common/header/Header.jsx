@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import {
-  FiAlignRight,
-  FiChevronDown,
-  FiChevronUp,
-} from "react-icons/fi";
+import { FiAlignRight, FiChevronDown, FiChevronUp } from "react-icons/fi";
 import logo from "../../../images/logo-light.png";
 import "./header.css";
 
 const Header = () => {
   const [isMenu, setisMenu] = useState(false);
   const [isResponsiveclose, setResponsiveclose] = useState(false);
-  
+
   const toggleClass = () => {
     setisMenu(!isMenu);
     setResponsiveclose(!isResponsiveclose);
@@ -60,14 +56,20 @@ const Header = () => {
           </li>
           <li className="menu-item sub__menus__arrows">
             <Link to="" onClick={toggleSubmenu1}>
-              Mortgage Products {isMenuSubMenu1 ? <FiChevronUp /> : <FiChevronDown />}
+              Mortgage Products{" "}
+              {isMenuSubMenu1 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
             {isMenuSubMenu1 && (
               <ul className="sub__menus">
                 <li>
-                  <NavLink activeClassName="is-active" to="/FixRates">
-                    Fixed-rate Mortgages
-                  </NavLink>
+                  <a
+                    href="https://mortgage-calculator-tutorial.vercel.app/"
+                    className="is-active"
+                    target=""
+                    rel="noopener noreferrer"
+                  >
+                    Mortgage Calculator
+                  </a>
                 </li>
                 <li>
                   <NavLink activeClassName="is-active" to="/FHA">
