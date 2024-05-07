@@ -92,8 +92,9 @@ header a:hover {
 }
 
 .header__middle__logo img {
-  width: 8rem;
+  width: 9rem;
   padding: 0.3rem;
+  margin-left: 10rem;
 }
 
 .main-nav {
@@ -112,6 +113,7 @@ header a:hover {
   column-gap: 2rem;
   align-items: center;
   width: 100%;
+  margin-right: 6rem;
 }
 
 .main-menu a {
@@ -134,16 +136,19 @@ header a:hover {
   column-gap: 0.2rem;
 }
 
+
+
+
 .sub__menus {
   text-align: left;
   position: absolute;
   font-size: 15px;
   top: 3.5rem;
-  width: 100%;
-  display: none; /* Hide submenus by default */
-  visibility: hidden; /* Hide submenus by default */
-  opacity: 0; /* Set opacity to 0 */
-  transition: opacity 0.5s, visibility 0.5s; /* Add transition for opacity and visibility */
+  width: 12rem;
+  /* display: none; 
+  visibility: hidden; 
+  opacity: 0; 
+  transition: opacity 0.5s, visibility 0.5s;  */
 }
 
 .sub__menus a {
@@ -160,6 +165,12 @@ header a:hover {
   display: block;
   visibility: visible; /* Show submenus on hover */
   opacity: 1; /* Set opacity to 1 */
+}
+
+.main-menu li:hover .sub__menus {
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 520px) {
