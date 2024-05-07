@@ -66,96 +66,109 @@ header .toggle {
   }
 } */
 
+header {
+  background-color: rgba(0, 0, 0, .1);
+  height: 12vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+header a {
+  transition: 0.5s;
+}
+
+header a:hover {
+  color: #224acd;
+}
+
 .header__middle {
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1.6rem;
-  background: rgb(255, 255, 255);
+}
 
-  .header__middle__logo {
-    img {
-      width: 8rem;
-      padding: 0.3rem
-    }
+.header__middle__logo img {
+  width: 8rem;
+  padding: 0.3rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menubar__button {
+  color: white;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.main-menu {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.main-menu a {
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.main-menu a:hover {
+  color:#224acd;
+}
+
+.sub__menus__arrows {
+  position: relative;
+}
+
+.sub__menus__arrows a {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+
+.sub__menus {
+  text-align: left;
+  position: absolute;
+  font-size: 15px;
+  top: 3.5rem;
+  width: 100%;
+  display: none; /* Hide submenus by default */
+  visibility: hidden; /* Hide submenus by default */
+  opacity: 0; /* Set opacity to 0 */
+  transition: opacity 0.5s, visibility 0.5s; /* Add transition for opacity and visibility */
+}
+
+.sub__menus a {
+  background: white;
+  color: black;
+}
+
+.sub__menus a:hover {
+  color: #224acd;
+}
+
+/* Show submenus on hover */
+.sub__menus__arrows:hover .sub__menus {
+  display: block;
+  visibility: visible; /* Show submenus on hover */
+  opacity: 1; /* Set opacity to 1 */
+}
+
+@media (max-width: 520px) {
+  .main-menu {
+    display: none;
   }
 
-  .main-nav {
-    display: flex;
-    align-items: center;
-
-    .menubar__button {
-      color: white;
-      font-size: 1.5rem;
-      display: none;
-    }
-
-    .main-menu {
-      
-      a{
-        
-        /* border-radius: 10px; */
-        padding: 0.5rem;
-        background: rgb(255, 255, 255);
-        color:black;
-      }
-      a:hover {
-        background-color: rgba(2, 45, 98, 0.166);
-        
-        }
-      display: flex;
-      column-gap: 2rem;
-      align-items: center;
-      width: 100%;
-      
-
-      .sub__menus__arrows {
-        
-        position: relative;
-        
-        a {
-          
-          color:black;
-          display: flex;
-          align-items: center;
-          column-gap: 0.2rem;
-        }
-        
-
-        .sub__menus {
-          
-          text-align: left;
-          position: absolute;
-          font-size: 15px;
-          top: 3.5rem;
-          width: 100%;
-          z-index: 2;
-          a:hover {
-            /* background-color: rgba(2, 45, 98, 0.166); */
-            color: white;
-            }
-        }
-      }
-    }
-  }
-
-  a {
-    color: rgb(255, 255, 255);
-    
+  .menubar__button {
+    display: inline-block;
   }
 }
 
-@media (width< 520px) {
-  .header__middle {
-    .main-nav {
-      .menubar__button {
-        display: inline-block;
-      }
-
-      .main-menu {
-        display: none;
-      }
-    }
-  }
-}
