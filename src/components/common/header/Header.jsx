@@ -14,18 +14,28 @@ const Header = () => {
   };
 
   const [isMenuSubMenu1, setMenuSubMenu1] = useState(false);
-  const toggleSubmenu1 = () => {
-    setMenuSubMenu1(!isMenuSubMenu1);
-  };
+  // const toggleSubmenu1 = () => {
+  //   setMenuSubMenu1(!isMenuSubMenu1);
+  // };
 
   const [isMenuSubMenu2, setMenuSubMenu2] = useState(false);
-  const toggleSubmenu2 = () => {
-    setMenuSubMenu2(!isMenuSubMenu2);
-  };
+  // const toggleSubmenu2 = () => {
+  //   setMenuSubMenu2(!isMenuSubMenu2);
+  // };
 
   const [isMenuSubMenu3, setMenuSubMenu3] = useState(false);
-  const toggleSubmenu3 = () => {
-    setMenuSubMenu3(!isMenuSubMenu3);
+  // const toggleSubmenu3 = () => {
+  //   setMenuSubMenu3(!isMenuSubMenu3);
+  // };
+
+  // Function to handle submenu visibility on hover
+  const handleSubmenuHover = (submenuStateSetter, newState) => {
+    // Close all other submenus
+    setMenuSubMenu1(false);
+    setMenuSubMenu2(false);
+    setMenuSubMenu3(false);
+    // Set the state of the current submenu
+    submenuStateSetter(newState);
   };
 
   return (
@@ -54,8 +64,12 @@ const Header = () => {
               About Us
             </NavLink>
           </li>
-          <li className="menu-item sub__menus__arrows">
-            <Link to="" onClick={toggleSubmenu1}>
+          <li
+            className="menu-item sub__menus__arrows"
+            onMouseEnter={() => handleSubmenuHover(setMenuSubMenu1, true)}
+            onMouseLeave={() => handleSubmenuHover(setMenuSubMenu1, false)}
+          >
+            <Link to="">
               Mortgage Products{" "}
               {isMenuSubMenu1 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
@@ -84,8 +98,12 @@ const Header = () => {
               </ul>
             )}
           </li>
-          <li className="menu-item sub__menus__arrows">
-            <Link to="#" onClick={toggleSubmenu2}>
+          <li
+            className="menu-item sub__menus__arrows"
+            onMouseEnter={() => handleSubmenuHover(setMenuSubMenu2, true)}
+            onMouseLeave={() => handleSubmenuHover(setMenuSubMenu2, false)}
+          >
+            <Link to="#">
               Rates {isMenuSubMenu2 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
             {isMenuSubMenu2 && (
@@ -108,8 +126,12 @@ const Header = () => {
               </ul>
             )}
           </li>
-          <li className="menu-item sub__menus__arrows">
-            <Link to="#" onClick={toggleSubmenu3}>
+          <li
+            className="menu-item sub__menus__arrows"
+            onMouseEnter={() => handleSubmenuHover(setMenuSubMenu3, true)}
+            onMouseLeave={() => handleSubmenuHover(setMenuSubMenu3, false)}
+          >
+            <Link to="#" >
               Apply Here {isMenuSubMenu3 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
             {isMenuSubMenu3 && (
@@ -144,3 +166,4 @@ const Header = () => {
 };
 
 export default Header;
+
