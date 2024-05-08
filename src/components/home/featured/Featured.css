@@ -5,11 +5,58 @@
   padding: 30px;
   cursor: pointer;
 }
+
 .featured img {
   width: 65px;
   height: 65px;
   margin: auto;
 }
-.welcome{
-  color: black;
+
+.benefits {
+  margin-top: 10px;
+}
+
+.benefits p {
+  font-weight: bold;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.benefit-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .content.grid3 {
+    display: block;
+  }
+
+  .benefits-list {
+    align-items: flex-start;
+  }
 }
