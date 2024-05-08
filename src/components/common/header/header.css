@@ -179,6 +179,10 @@ header a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+.main-menu .apply-btn:hover {
+  color:#ffffff;
+}
+
 @media (max-width: 520px) {
   .main-menu {
     display: none;
