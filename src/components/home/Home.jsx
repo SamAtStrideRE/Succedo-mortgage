@@ -1,5 +1,5 @@
 import React from "react"
-// import Awards from "./awards/Awards"
+// import Header from "../common/header/Header.jsx"
 import Featured from "./featured/Featured"
 import Hero from "./hero/Hero"
 // import Price from "./price/Price"
@@ -8,6 +8,7 @@ import Hero from "./hero/Hero"
 const Home = () => {
   return (
     <>
+      {/* <Header/> */}
       <Hero />
       <Featured />
       {/* <Awards /> */}

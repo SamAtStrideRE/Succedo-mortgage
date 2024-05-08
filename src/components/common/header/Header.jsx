@@ -14,33 +14,18 @@ const Header = () => {
   };
 
   const [isMenuSubMenu1, setMenuSubMenu1] = useState(false);
-  // const toggleSubmenu1 = () => {
-  //   setMenuSubMenu1(!isMenuSubMenu1);
-  // };
-
   const [isMenuSubMenu2, setMenuSubMenu2] = useState(false);
-  // const toggleSubmenu2 = () => {
-  //   setMenuSubMenu2(!isMenuSubMenu2);
-  // };
-
   const [isMenuSubMenu3, setMenuSubMenu3] = useState(false);
-  // const toggleSubmenu3 = () => {
-  //   setMenuSubMenu3(!isMenuSubMenu3);
-  // };
 
-  // Function to handle submenu visibility on hover
   const handleSubmenuHover = (submenuStateSetter, newState) => {
-    // Close all other submenus
     setMenuSubMenu1(false);
     setMenuSubMenu2(false);
     setMenuSubMenu3(false);
-    // Set the state of the current submenu
     submenuStateSetter(newState);
   };
 
   return (
     <header className="header__middle">
-      {/* Add Logo  */}
       <div className="header__middle__logo">
         <NavLink exact activeClassName="is-active" to="/">
           <img src={logo} alt="logo" />
@@ -48,7 +33,6 @@ const Header = () => {
       </div>
 
       <nav className="main-nav">
-        {/* Responsive Menu Button */}
         <span className="menubar__button" onClick={toggleClass}>
           <FiAlignRight />
         </span>
@@ -131,7 +115,7 @@ const Header = () => {
             onMouseEnter={() => handleSubmenuHover(setMenuSubMenu3, true)}
             onMouseLeave={() => handleSubmenuHover(setMenuSubMenu3, false)}
           >
-            <Link to="#" >
+            <Link to="#">
               Apply Here {isMenuSubMenu3 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
             {isMenuSubMenu3 && (
@@ -159,6 +143,11 @@ const Header = () => {
               Contact
             </NavLink>
           </li>
+          <li className="menu-item">
+            <Link to="/ApplyNow" className="apply-btn">
+              Apply Now
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
@@ -166,4 +155,3 @@ const Header = () => {
 };
 
 export default Header;
-

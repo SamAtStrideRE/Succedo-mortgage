@@ -1,19 +1,21 @@
-import React from "react"
-import Heading from "../../common/Heading"
-import "./hero.css"
+import React from "react";
+import Heading from "../../common/Heading";
+import "./hero.css";
 
 const Hero = () => {
   return (
     <>
-      <section className='hero'>
-        <div className='container'>
-          <Heading title='YOUR SUCCESS IS OUR PRIORITY'  />
-          
-            
+      <section className="hero">
+        <div className="container">
+          <Heading title="YOUR SUCCESS IS OUR PRIORITY" />
+          <div className="buttons">
+            <button className="btn">Apply Now</button>
+            <button className="btn">Request a Call</button>
+          </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

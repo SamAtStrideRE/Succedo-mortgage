@@ -23,10 +23,10 @@ const FeaturedCard = () => {
               </div>
             </div>
           </div>
-          <div className="buttons">
+          {/* <div className="buttons">
             <button>Button 1</button>
             <button>Button 2</button>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>

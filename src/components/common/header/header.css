@@ -157,7 +157,7 @@ header a:hover {
 }
 
 .sub__menus a:hover {
-  color: #224acd;
+  color: rgb(0, 88, 146);
 }
 
 /* Show submenus on hover */
@@ -172,7 +172,13 @@ header a:hover {
   visibility: visible;
   opacity: 1;
 }
-
+.apply-btn{
+  background: rgb(0, 88, 146);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 @media (max-width: 520px) {
   .main-menu {
     display: none;

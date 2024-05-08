@@ -38,7 +38,7 @@
   margin-right: 10px;
 }
 
-.buttons {
+/* .buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
@@ -48,7 +48,7 @@
   flex: 1;
   padding: 10px;
   margin: 0 5px;
-}
+} */
 
 /* Add media query for responsiveness */
 @media (max-width: 768px) {

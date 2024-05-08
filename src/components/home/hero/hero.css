@@ -1,5 +1,9 @@
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../images/landings.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../../images/landings.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,31 +12,48 @@
   position: relative;
 }
 
-
-.btn{
-  background: rgb(0, 88, 146);
-  display: none; 
-  align-items: center;
+.buttons {
+  display: flex;
   justify-content: center;
+  margin-top: 20px;
+  
 }
+
+.buttons button {
+  background: rgb(0, 88, 146);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+ 
+  font-size: 20px;
+}
+
 .hero .container {
   padding-top: 15%;
 }
+
 .hero h1 {
   color: #ffffff;
   font-size: 42px;
   padding-top: 65px;
 }
+
 .hero p {
   color: #fff;
   opacity: 0.8;
 }
+
 form {
   background-color: #fff;
   border-radius: 5px;
   margin-top: 50px;
   padding: 0 20px;
 }
+
 form input {
   padding: 10px;
   width: 100%;
@@ -40,24 +61,30 @@ form input {
   margin-top: 5px;
   border-radius: 5px;
 }
+
 form span {
   font-size: 14px;
   color: grey;
 }
+
 input::placeholder {
   font-size: 17px;
   color: black;
 }
+
 form .box {
   padding: 15px;
   border-left: 1px solid rgba(128, 128, 128, 0.2);
 }
+
 form .box:nth-child(1) {
   border-left: none;
 }
+
 form h4 {
   font-weight: 500;
 }
+
 @media screen and (max-width: 800px) {
   .hero .container {
     padding-top: 30%;
