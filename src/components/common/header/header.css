@@ -66,14 +66,32 @@ header .toggle {
   }
 } */
 
-header {
+.header {
   background-color: rgba(0, 0, 0, .1);
   height: 12vh;
   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
   padding: 15px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 99999;
+}
+.header-scroll{
+  width: 100%;
+  background-color: rgba(243, 243, 243, 0.923);
+  height: 12vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.6rem;
+}
+.header-scroll .main-menu a {
+  padding: 0.5rem;
+  color: rgb(0, 0, 0);
 }
 
 header a {
@@ -81,7 +99,7 @@ header a {
 }
 
 header a:hover {
-  color: #224acd;
+  color: #1d64b1;
 }
 
 .header__middle {
@@ -95,6 +113,7 @@ header a:hover {
   width: 9rem;
   padding: 0.3rem;
   margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .main-nav {
@@ -113,7 +132,7 @@ header a:hover {
   column-gap: 2rem;
   align-items: center;
   width: 100%;
-  margin-right: 6rem;
+  margin-right: 3rem;
 }
 
 .main-menu a {
@@ -179,6 +198,7 @@ header a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .main-menu .apply-btn:hover {
   color:#fff;
 }

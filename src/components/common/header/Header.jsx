@@ -13,6 +13,17 @@ const Header = () => {
     setResponsiveclose(!isResponsiveclose);
   };
 
+  const [color, setColor] = useState(false)
+  const changeColor = () => {
+    if(window.scrollY >=700){
+      setColor(true);
+    }
+    else{
+      setColor(false);
+    }
+  }
+  window.addEventListener('scroll', changeColor);
+
   const [isMenuSubMenu1, setMenuSubMenu1] = useState(false);
   const [isMenuSubMenu2, setMenuSubMenu2] = useState(false);
   const [isMenuSubMenu3, setMenuSubMenu3] = useState(false);
@@ -25,7 +36,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header__middle">
+    <header className={color ? 'header header-scroll' : 'header header__middle'}>
       <div className="header__middle__logo">
         <NavLink exact activeClassName="is-active" to="/">
           <img src={logo} alt="logo" />
