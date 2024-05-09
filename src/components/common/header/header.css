@@ -94,7 +94,7 @@ header a:hover {
 .header__middle__logo img {
   width: 9rem;
   padding: 0.3rem;
-  margin-left: 10rem;
+  margin-left: 3rem;
 }
 
 .main-nav {
@@ -180,7 +180,7 @@ header a:hover {
   cursor: pointer;
 }
 .main-menu .apply-btn:hover {
-  color:#ffffff;
+  color:#fff;
 }
 
 @media (max-width: 520px) {

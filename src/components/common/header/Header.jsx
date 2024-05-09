@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { FiAlignRight, FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { FiAlignRight, FiChevronDown, FiChevronUp, FiPhone } from "react-icons/fi";
 import logo from "../../../images/logo-light.png";
 import "./header.css";
 
@@ -147,6 +147,12 @@ const Header = () => {
             <Link to="/ApplyNow" className="apply-btn">
               Apply Now
             </Link>
+          </li>
+          <li className="menu-item">
+            <a href="tel:6023449333" className="phone-icon">
+              <FiPhone />
+              (602) 344-9333
+            </a>
           </li>
         </ul>
       </nav>
