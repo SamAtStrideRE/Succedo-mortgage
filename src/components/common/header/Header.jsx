@@ -81,6 +81,16 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
+                  <NavLink activeClassName="is-active" to="/ARM">
+                    Adjustable Rate Mortgages
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="is-active" to="/FRM">
+                    Fixed  Rate Mortgages
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink activeClassName="is-active" to="/FHA">
                     FHA Loans
                   </NavLink>
@@ -89,6 +99,21 @@ const Header = () => {
                   <NavLink activeClassName="is-active" to="/VA">
                     VA Loans
                   </NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="is-active" to="/JL">
+                    Jumbo Loans
+                  </NavLink>
+                </li>
+                <li>
+                  <a
+                    href="https://mortgage-calculator-tutorial.vercel.app/"
+                    className="is-active"
+                    target=""
+                    rel="noopener noreferrer"
+                  >
+                    Non-QM Loan
+                  </a>
                 </li>
               </ul>
             )}
