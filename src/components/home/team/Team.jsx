@@ -8,7 +8,20 @@ const Team = () => {
     <>
       <section className='team background'>
         <div className='container'>
-          <Heading title='Our Team' subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' />
+          <div className='heading-wrapper'>
+            <Heading title='Our Company' />
+            </div>
+          
+          <div className='welcome-box'>
+            <p>
+            Headquartered in Dallas, Succedo Mortgages stands as your reliable source for mortgage solutions. Pioneering exceptional service and offering customized loan options, Succedo Mortgages is dedicated to assisting individuals and families in realizing their dreams of homeownership.
+            </p>
+          </div>
+
+          <div className='heading-wrapper'>
+            <Heading title='Our Team' subtitle='Our team at succedo is fast, friendly, experienced and here to help you every step of the process!' />
+          </div>
+          
 
           <div className='content mtop grid3'>
             {team.map((val, index) => (
@@ -39,6 +52,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
+              
             ))}
           </div>
         </div>
