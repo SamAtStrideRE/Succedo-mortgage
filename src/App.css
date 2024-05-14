@@ -28,7 +28,7 @@ ul {
 button {
   border-radius: 5px;
   padding: 17px 30px;
-  background: #2f4794;
+  background: #354ea0;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -49,7 +49,7 @@ button i {
   font-size: 35px;
 }
 .heading p {
-  color: #72809d;
+  color: #7f8ead;
 }
 textarea,
 input {
