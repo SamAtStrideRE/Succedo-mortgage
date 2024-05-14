@@ -7,8 +7,8 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { theme } from "./theme";
 
-const MortCalc = ReactDOM.createRoot(document.getElementById("root"));
-MortCalc.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <App />
