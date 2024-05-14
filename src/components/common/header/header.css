@@ -189,7 +189,12 @@ nav .menu span {
     flex-direction: column;
     align-items: center;
     margin-right: 0;
-    margin-top: 80vh; /* Adjust as needed */
+    margin-left: 0;
+    margin-top: 100vh; /* Adjust as needed */
+    height: 100vh;
+    width: 1000px;
+    padding: rem;
+    z-index: 99;
   }
 
   .main-menu.open {
@@ -197,7 +202,8 @@ nav .menu span {
   }
 
   .main-menu a {
-    padding: 1rem;
+    padding: 1.5rem;
     color: #fff;
+    
   }
 }
