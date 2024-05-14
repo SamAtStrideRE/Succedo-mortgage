@@ -1,82 +1,18 @@
-/* header {
-  background-color: #fff;
-  height: 10vh;
-  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 99999;
-}
-header img {
-  width: 170px;
-}
-header a {
-  margin-left: 30px;
-  transition: 0.5s;
-  font-weight: 500;
-}
-header a:hover {
-  color: #27ae60;
-}
-header span {
-  width: auto;
-  padding: 0px 6px;
-  background: #27ae60;
-  border-radius: 50px;
-  color: #ffffff;
-  margin-right: 4px;
-  font-weight: 400;
-}
-header h4 {
-  font-weight: 500;
-  margin-right: 20px;
-}
-header .toggle {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  header {
-    padding: 0;
-  }
-  header img {
-    margin-top: 30px;
-  }
-  header .button {
-    display: none;
-  }
-  header .nav .flex {
-    display: none;
-  }
-  header .toggle {
-    display: block;
-    margin-top: 20px;
-  }
-  header .small {
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    width: 100%;
-    background-color: #27ae60;
-    padding: 20px;
-  }
-  header li a {
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #fff;
-  }
-} */
-
 .header {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
   height: 12vh;
   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
   padding: 15px 0;
   position: fixed;
   top: 0;
   z-index: 99999;
-}
-.header-scroll{
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-scroll {
   background-color: rgba(243, 243, 243, 0.923);
   height: 12vh;
   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
@@ -84,11 +20,13 @@ header .toggle {
   position: fixed;
   top: 0;
   z-index: 99999;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1.6rem;
 }
+
 .header-scroll .main-menu a {
   padding: 0.5rem;
   color: rgb(0, 0, 0);
@@ -116,15 +54,27 @@ header a:hover {
   margin-right: 3rem;
 }
 
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.3rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
-}
-
-.menubar__button {
-  color: white;
-  font-size: 1.5rem;
-  display: none;
 }
 
 .main-menu {
@@ -141,7 +91,7 @@ header a:hover {
 }
 
 .main-menu a:hover {
-  color:#224acd;
+  color: #224acd;
 }
 
 .sub__menus__arrows {
@@ -155,19 +105,12 @@ header a:hover {
   column-gap: 0.2rem;
 }
 
-
-
-
 .sub__menus {
   text-align: left;
   position: absolute;
   font-size: 15px;
   top: 3.5rem;
   width: 12rem;
-  /* display: none; 
-  visibility: hidden; 
-  opacity: 0; 
-  transition: opacity 0.5s, visibility 0.5s;  */
 }
 
 .sub__menus a {
@@ -179,11 +122,10 @@ header a:hover {
   color: rgb(0, 88, 146);
 }
 
-/* Show submenus on hover */
 .sub__menus__arrows:hover .sub__menus {
   display: block;
-  visibility: visible; /* Show submenus on hover */
-  opacity: 1; /* Set opacity to 1 */
+  visibility: visible;
+  opacity: 1;
 }
 
 .main-menu li:hover .sub__menus {
@@ -191,7 +133,8 @@ header a:hover {
   visibility: visible;
   opacity: 1;
 }
-.apply-btn{
+
+.apply-btn {
   background: rgb(0, 88, 146);
   padding: 15px 30px;
   border: none;
@@ -200,16 +143,61 @@ header a:hover {
 }
 
 .main-menu .apply-btn:hover {
-  color:#fff;
+  color: #fff;
 }
 
-@media (max-width: 520px) {
+.phone-icon {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.phone-icon:hover {
+  color: #224acd;
+}
+
+@media (max-width: 980px) {
+  nav .menu {
+    display: flex;
+  }
+  nav {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    background: #1d64b1;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  nav ul .open {
+    display: flex;
+  }
+  nav .main-menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li {
+    margin: 0.2rem 0.5rem;
+  }
+
   .main-menu {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 60vh; /* Adjust as needed */
   }
 
-  .menubar__button {
-    display: inline-block;
+  .main-menu.open {
+    display: flex;
+  }
+
+  .main-menu a {
+    padding: 1rem;
+    color: #fff;
   }
 }
-

@@ -1,28 +1,21 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { FiAlignRight, FiChevronDown, FiChevronUp, FiPhone } from "react-icons/fi";
+import { FiChevronDown, FiChevronUp, FiPhone } from "react-icons/fi";
 import logo from "../../../images/logo-light.png";
 import "./header.css";
 
 const Header = () => {
-  const [isMenu, setisMenu] = useState(false);
-  const [isResponsiveclose, setResponsiveclose] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [color, setColor] = useState(false);
 
-  const toggleClass = () => {
-    setisMenu(!isMenu);
-    setResponsiveclose(!isResponsiveclose);
-  };
-
-  const [color, setColor] = useState(false)
   const changeColor = () => {
-    if(window.scrollY >=700){
+    if (window.scrollY >= 700) {
       setColor(true);
-    }
-    else{
+    } else {
       setColor(false);
     }
-  }
-  window.addEventListener('scroll', changeColor);
+  };
+  window.addEventListener("scroll", changeColor);
 
   const [isMenuSubMenu1, setMenuSubMenu1] = useState(false);
   const [isMenuSubMenu2, setMenuSubMenu2] = useState(false);
@@ -36,7 +29,9 @@ const Header = () => {
   };
 
   return (
-    <header className={color ? 'header header-scroll' : 'header header__middle'}>
+    <header
+      className={color ? "header header-scroll" : "header header__middle"}
+    >
       <div className="header__middle__logo">
         <NavLink exact activeClassName="is-active" to="/">
           <img src={logo} alt="logo" />
@@ -44,11 +39,18 @@ const Header = () => {
       </div>
 
       <nav className="main-nav">
-        <span className="menubar__button" onClick={toggleClass}>
-          <FiAlignRight />
-        </span>
+        <div
+          className="menu"
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        <ul className={`main-menu ${isMenu ? "menuq2" : ""}`}>
+        <ul className={`main-menu ${menuOpen ? "open" : ""}`}>
           <li className="menu-item">
             <NavLink exact activeClassName="is-active" to="/">
               Home
@@ -87,7 +89,7 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink activeClassName="is-active" to="/FRM">
-                    Fixed  Rate Mortgages
+                    Fixed Rate Mortgages
                   </NavLink>
                 </li>
                 <li>
