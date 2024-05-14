@@ -111,6 +111,7 @@ nav .menu span {
   font-size: 15px;
   top: 3.5rem;
   width: 12rem;
+  z-index: 100; /* Increase z-index to ensure it's displayed on top */
 }
 
 .sub__menus a {
@@ -118,6 +119,9 @@ nav .menu span {
   color: black;
 }
 
+.menu-item {
+  position: relative; /* Ensure menu items are positioned relatively */
+}
 .sub__menus a:hover {
   color: rgb(0, 88, 146);
 }
@@ -164,7 +168,7 @@ nav .menu span {
   nav {
     flex-direction: column;
     align-items: start;
-    width: 100%;
+    width: 30%;
     background: #1d64b1;
   }
   nav ul {
@@ -206,4 +210,11 @@ nav .menu span {
     color: #fff;
     
   }
+  .menu-item:hover .sub__menus {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    top: 3.5rem; /* Adjust top position as needed */
+  }
+  
 }
