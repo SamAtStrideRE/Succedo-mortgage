@@ -29,9 +29,7 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={color ? "header header-scroll" : "header header__middle"}
-    >
+    <header className={color ? "header header-scroll" : "header header__middle"}>
       <div className="header__middle__logo">
         <NavLink exact activeClassName="is-active" to="/">
           <img src={logo} alt="logo" />
@@ -66,7 +64,7 @@ const Header = () => {
             onMouseEnter={() => handleSubmenuHover(setMenuSubMenu1, true)}
             onMouseLeave={() => handleSubmenuHover(setMenuSubMenu1, false)}
           >
-            <Link to="">
+            <Link to="#">
               Mortgage Products{" "}
               {isMenuSubMenu1 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
@@ -76,7 +74,7 @@ const Header = () => {
                   <a
                     href="https://mortgage-calculator-tutorial.vercel.app/"
                     className="is-active"
-                    target=""
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     Mortgage Calculator
