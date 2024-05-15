@@ -216,5 +216,25 @@ nav .menu span {
     opacity: 1;
     top: 3.5rem; /* Adjust top position as needed */
   }
+  .sub__menus {
+    text-align: left;
+    position: absolute;
+    font-size: 15px;
+    width: 12rem;
+    background-color: black;
+    z-index: 100; /* Increase z-index to ensure it's displayed on top */
+  }
+  
+  .menu-item {
+    position: relative; /* Ensure menu items are positioned relatively */
+  }
+  
+  .menu-item:hover .sub__menus {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    top: 3.5rem; /* Adjust top position as needed */
+  }
+  
   
 }
