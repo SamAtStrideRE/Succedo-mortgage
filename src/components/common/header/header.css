@@ -146,12 +146,10 @@ nav .menu span {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-
 }
 .header-scroll .main-menu .apply-btn {
   color: #fff;
 }
-
 
 .main-menu .apply-btn:hover {
   color: #fff;
@@ -171,10 +169,8 @@ nav .menu span {
 @media (max-width: 980px) {
   nav .menu {
     display: flex;
-    
   }
   nav {
-    
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -218,7 +214,6 @@ nav .menu span {
     padding: 1.5rem;
     margin-top: 1rem;
     color: #fff; /* Set text color to black */
-    
   }
 
   .menu-item:hover .sub__menus,
@@ -231,11 +226,11 @@ nav .menu span {
     display: block; /*"Apply Now" button appears as a block */
     margin-top: 1rem; /* top margin to separation  */
   }
-  
+
   .sub__menus a {
     color: rgb(251, 251, 251); /* Set text color to black */
   }
-  
+
   .sub__menus a:hover {
     color: #ffffff;
     background-color: #224acd; /* Hover color for dropdown menu items */
@@ -247,13 +242,9 @@ nav .menu span {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
   }
-  
-  .main-menu .apply-btn  {
+
+  .main-menu .apply-btn {
     color: #fff;
   }
-
-
-  
 }
