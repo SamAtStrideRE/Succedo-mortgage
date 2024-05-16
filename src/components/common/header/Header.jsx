@@ -152,7 +152,7 @@ const Header = () => {
             onMouseLeave={() => handleSubmenuHover(setMenuSubMenu3, false)}
           >
             <Link to="#">
-              Apply Here {isMenuSubMenu3 ? <FiChevronUp /> : <FiChevronDown />}
+              Apply {isMenuSubMenu3 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
             {isMenuSubMenu3 && (
               <ul className="sub__menus">
