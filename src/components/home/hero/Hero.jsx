@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="container">
           <Heading title="YOUR SUCCESS IS OUR PRIORITY" />
           <div className="buttons">
-            <button className="btn">Apply Now</button>
+            <a href="https://2584954.my1003app.com/2398062/register" target="_blank" rel="noopener noreferrer"><button className="btn" >Apply Now</button></a>
             <button className="btn">Request a Call</button>
           </div>
         </div>

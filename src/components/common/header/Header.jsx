@@ -29,7 +29,9 @@ const Header = () => {
   };
 
   return (
-    <header className={color ? "header header-scroll" : "header header__middle"}>
+    <header
+      className={color ? "header header-scroll" : "header header__middle"}
+    >
       <div className="header__middle__logo">
         <NavLink exact activeClassName="is-active" to="/">
           <img src={logo} alt="logo" />
@@ -180,9 +182,14 @@ const Header = () => {
             </NavLink>
           </li>
           <li className="menu-item">
-            <Link to="/ApplyNow" className="apply-btn">
+            <a
+              href="https://2584954.my1003app.com/2398062/register"
+              className="apply-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Apply Now
-            </Link>
+            </a>
           </li>
           <li className="menu-item">
             <a href="tel:6023449333" className="phone-icon">
