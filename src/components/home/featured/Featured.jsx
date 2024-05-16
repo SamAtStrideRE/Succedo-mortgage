@@ -20,7 +20,7 @@ Why settle for less when Succedo Mortgage offers flexibility and value? Join us 
         <br />
         <div className="container">
           <Heading
-            title="Cheaper Faster,Easier is the Better way"
+            title="Cheaper, Faster, Easier is the Better way"
             subtitle="Find All Type of Loans"
           />
           <FeaturedCard />
