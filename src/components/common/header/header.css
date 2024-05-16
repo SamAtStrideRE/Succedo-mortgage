@@ -173,36 +173,40 @@ nav .menu span {
   nav {
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    min-width: 100%;
     background: #1d64b1;
   }
   nav ul {
     display: none;
+    
     flex-direction: column;
     width: 100%;
     margin-bottom: 0.25rem;
   }
   nav ul .open {
     display: flex;
+    
   }
   nav .main-menu ul li {
     width: 100%;
+    
     text-align: center;
   }
   nav ul li {
+    
     margin: 0.2rem 0.5rem;
   }
 
   .main-menu {
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items:center; /* Align items to the right */
     margin-right: 0;
     margin-left: 0;
     margin-top: 100vh; /* Adjust as needed */
     height: 100vh;
-    width: 1000px;
-    padding: 5rem;
+    width: 100%; /* Adjusted to take full width */
+    padding-top: 5rem; /* Adjusted padding as needed */
     z-index: 99;
   }
 
@@ -211,7 +215,7 @@ nav .menu span {
   }
 
   .main-menu a {
-    padding: 1.5rem;
+    padding: 1rem;
     margin-top: 1rem;
     color: #fff; /* Set text color to black */
   }
