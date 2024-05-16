@@ -4,6 +4,8 @@
   text-align: center;
   padding: 30px;
   cursor: pointer;
+  min-width: 300px;
+  min-height: auto;
 }
 
 .featured img {
@@ -12,31 +14,7 @@
   margin: auto;
 }
 
-.benefits {
-  margin-top: 10px;
-}
 
-.benefits p {
-  font-weight: bold;
-}
-
-.benefits-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.benefit-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.benefit-item img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
 
 /* .buttons {
   display: flex;
@@ -51,8 +29,9 @@
 } */
 
 /* Add media query for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
   .content.grid3 {
+    min-width: 300px;
     display: block;
   }
 
