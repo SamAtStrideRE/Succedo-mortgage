@@ -150,6 +150,9 @@ nav .menu span {
 .main-menu .apply-btn:hover {
   color: #fff;
 }
+.main-menu .apply-btn {
+  color: #fff;
+}
 
 .phone-icon {
   color: #ffffff;
@@ -230,8 +233,18 @@ nav .menu span {
   .sub__menus a:hover {
     color: rgb(0, 88, 146); /* Hover color for dropdown menu items */
   }
-  
 
+  .main-menu .apply-btn {
+    background: rgb(35, 156, 237);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-menu .apply-btn {
+    color: #fff;
+  }
 
 
   
