@@ -37,7 +37,7 @@ header a {
 }
 
 header a:hover {
-  color: #1d64b1;
+  /* color: #1d64b1; */
 }
 
 .header__middle {
@@ -91,7 +91,7 @@ nav .menu span {
 }
 
 .main-menu a:hover {
-  color: #224acd;
+  text-decoration: double underline;
 }
 
 .sub__menus__arrows {
@@ -109,10 +109,11 @@ nav .menu span {
   text-align: left;
   position: absolute;
   font-size: 15px;
-  top: 3.5rem;
+  top: 100%; /* Adjust position relative to the parent menu item */
+  left: 0; /* Ensure the dropdown aligns with the parent */
   width: 12rem;
-  z-index: 100; /* Increase z-index to ensure it's displayed on top */
-  
+  z-index: 1000; /* Increase z-index to ensure it's displayed on top */
+  display: none; /* Hide the dropdown by default */
 }
 
 .sub__menus a {
@@ -124,7 +125,7 @@ nav .menu span {
   position: relative; /* Ensure menu items are positioned relatively */
 }
 .sub__menus a:hover {
-  color: rgb(0, 88, 146);
+  /* color: rgb(0, 88, 146); */
 }
 
 .sub__menus__arrows:hover .sub__menus {
@@ -143,6 +144,7 @@ nav .menu span {
   background: rgb(0, 88, 146);
   padding: 15px 30px;
   border: none;
+  color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -215,11 +217,11 @@ nav .menu span {
     
   }
 
-  .menu-item:hover .sub__menus {
-    display: block;
+  .menu-item:hover .sub__menus,
+  .sub__menus:hover {
+    display: block; /* Ensure the dropdown stays open when hovered */
     visibility: visible;
     opacity: 1;
-    top: 3.5rem; /* Adjust top position  */
   }
   .main-menu .apply-btn {
     display: block; /*"Apply Now" button appears as a block */
@@ -231,7 +233,8 @@ nav .menu span {
   }
   
   .sub__menus a:hover {
-    color: rgb(0, 88, 146); /* Hover color for dropdown menu items */
+    color: #ffffff;
+    background-color: #224acd; /* Hover color for dropdown menu items */
   }
 
   .main-menu .apply-btn {
