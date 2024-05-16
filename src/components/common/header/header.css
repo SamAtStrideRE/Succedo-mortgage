@@ -219,7 +219,7 @@ nav .menu span {
   .menu-item:hover .sub__menus,
   .sub__menus:hover {
     display: block; /* Ensure the dropdown stays open when hovered */
-    
+
     visibility: visible;
     opacity: 1;
   }
