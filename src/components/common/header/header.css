@@ -36,15 +36,13 @@ header a {
   transition: 0.5s;
 }
 
-header a:hover {
-  /* color: #1d64b1; */
-}
+
 
 .header__middle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1.6rem;
+  padding: 0.6rem 1rem;
 }
 
 .header__middle__logo img {
@@ -79,10 +77,10 @@ nav .menu span {
 
 .main-menu {
   display: flex;
-  column-gap: 2rem;
+  column-gap: 10px;
   align-items: center;
-  width: 100%;
-  margin-right: 3rem;
+  width:max-content;
+  margin-right: 10px;
 }
 
 .main-menu a {
@@ -91,7 +89,7 @@ nav .menu span {
 }
 
 .main-menu a:hover {
-  text-decoration: double underline;
+  border:  3px solid black 1s ease-in-out;
 }
 
 .sub__menus__arrows {
