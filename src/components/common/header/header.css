@@ -61,6 +61,7 @@ nav .menu {
   justify-content: space-between;
   width: 2.25rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 nav .menu span {
@@ -68,6 +69,7 @@ nav .menu span {
   width: 100%;
   background-color: #fff;
   border-radius: 0.2rem;
+  
 }
 
 .main-nav {
@@ -77,10 +79,11 @@ nav .menu span {
 
 .main-menu {
   display: flex;
-  column-gap: 10px;
+  column-gap: 1.5rem;
+  padding-right: 5em;
   align-items: center;
   width:max-content;
-  margin-right: 10px;
+  
 }
 
 .main-menu a {
@@ -88,9 +91,7 @@ nav .menu span {
   color: rgb(255, 255, 255);
 }
 
-.main-menu a:hover {
-  border:  3px solid black 1s ease-in-out;
-}
+
 
 .sub__menus__arrows {
   position: relative;
@@ -117,6 +118,11 @@ nav .menu span {
 .sub__menus a {
   background: white;
   color: black;
+}
+.sub__menus a:hover {
+  background: rgba(243, 243, 243, 0.552);
+  transition: none;
+  color:#224acd;
 }
 
 .menu-item {
@@ -164,7 +170,7 @@ nav .menu span {
   color: #224acd;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1180px) {
   nav .menu {
     display: flex;
   }
@@ -205,9 +211,11 @@ nav .menu span {
     width: 100%; /* Adjusted to take full width */
     padding-top: 5rem; /* Adjusted padding as needed */
     z-index: 99;
+    
   }
 
   .main-menu.open {
+    
     display: flex;
   }
 
@@ -229,12 +237,14 @@ nav .menu span {
   }
 
   .sub__menus a {
-    color: rgb(251, 251, 251); /* Set text color to black */
+    color: rgb(0, 0, 0); /* Set text color to black */
   }
 
   .sub__menus a:hover {
-    color: #ffffff;
-    background-color: #224acd; /* Hover color for dropdown menu items */
+    
+    color: #000000;
+    
+    background-color: #ffffff; /* Hover color for dropdown menu items */
   }
 
   .main-menu .apply-btn {
