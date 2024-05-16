@@ -9,7 +9,7 @@ const Header = () => {
   const [color, setColor] = useState(false);
 
   const changeColor = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 680) {
       setColor(true);
     } else {
       setColor(false);

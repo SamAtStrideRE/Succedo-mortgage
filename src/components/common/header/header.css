@@ -144,15 +144,17 @@ nav .menu span {
   background: rgb(0, 88, 146);
   padding: 15px 30px;
   border: none;
-  color: #ffffff;
+  
   border-radius: 5px;
   cursor: pointer;
-}
 
-.main-menu .apply-btn:hover {
+}
+.header-scroll .main-menu .apply-btn {
   color: #fff;
 }
-.main-menu .apply-btn {
+
+
+.main-menu .apply-btn:hover {
   color: #fff;
 }
 
@@ -243,9 +245,10 @@ nav .menu span {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
   }
   
-  .main-menu .apply-btn {
+  .main-menu .apply-btn  {
     color: #fff;
   }
 
