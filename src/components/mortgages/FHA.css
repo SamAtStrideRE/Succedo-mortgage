@@ -1,0 +1,33 @@
+/* FHA.css */
+
+.fha-container {
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+    padding: 120px 20px 20px; /* Add padding with more space at the top */
+    text-align: center; /* Align text center */
+  }
+  
+  .fha-container h1 {
+    font-size: 24px; /* Set font size for h1 */
+  }
+  
+  .fha-container p {
+    width: 50%; /* Set width of paragraphs */
+    margin: 0 auto; /* Center paragraphs horizontally */
+  }
+  
+  .fha-container button {
+    margin-top: 20px; /* Add margin to top of button */
+    padding: 10px 20px; /* Add padding to button */
+    font-size: 16px; /* Set font size */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+  }
+  
+  .fha-container button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+  
