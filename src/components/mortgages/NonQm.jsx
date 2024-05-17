@@ -1,5 +1,5 @@
 import React from 'react';
-import './NonQM.css'; 
+import './NonQm.css'; 
 
 const NonQM = () => {
   return (

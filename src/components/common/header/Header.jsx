@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FiChevronDown, FiChevronUp, FiPhone } from "react-icons/fi";
 import logo from "../../../images/logo-light.png";
@@ -7,30 +7,29 @@ import "./header.css";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [color, setColor] = useState(false);
-
-  const changeColor = () => {
-    if (window.scrollY >= 300) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-  window.addEventListener("scroll", changeColor);
-
   const [isMenuSubMenu1, setMenuSubMenu1] = useState(false);
   const [isMenuSubMenu2, setMenuSubMenu2] = useState(false);
 
   const handleSubmenuHover = (submenuStateSetter, newState) => {
     setMenuSubMenu1(false);
     setMenuSubMenu2(false);
-
     submenuStateSetter(newState);
   };
 
+  useEffect(() => {
+    const changeColor = () => {
+      setColor(window.scrollY >= 300);
+    };
+
+    window.addEventListener("scroll", changeColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
+
   return (
-    <header
-      className={color ? "header header-scroll" : "header header__middle"}
-    >
+    <header className={color ? "header header-scroll" : "header header__middle"}>
       <div className="header__middle__logo">
         <NavLink exact activeClassName="is-active" to="/">
           <img src={logo} alt="logo" />
@@ -72,7 +71,7 @@ const Header = () => {
             {isMenuSubMenu1 && (
               <ul className="sub__menus">
                 <li>
-                <NavLink activeClassName="is-active" to="/CalcApp">
+                  <NavLink activeClassName="is-active" to="/CalcApp">
                     Mortgage Calculator
                   </NavLink>
                 </li>
@@ -102,10 +101,9 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                <NavLink activeClassName="is-active" to="/NonQM">
+                  <NavLink activeClassName="is-active" to="/NonQM">
                     Non-QM Loan
                   </NavLink>
-                  </a>
                 </li>
               </ul>
             )}
@@ -138,34 +136,6 @@ const Header = () => {
               </ul>
             )}
           </li>
-          {/* <li
-            className="menu-item sub__menus__arrows"
-            onMouseEnter={() => handleSubmenuHover(setMenuSubMenu3, true)}
-            onMouseLeave={() => handleSubmenuHover(setMenuSubMenu3, false)}
-          >
-            <Link to="#">
-              Apply {isMenuSubMenu3 ? <FiChevronUp /> : <FiChevronDown />}
-            </Link>
-            {isMenuSubMenu3 && (
-              <ul className="sub__menus">
-                <li>
-                  <NavLink activeClassName="is-active" to="/OA">
-                    Online Application
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink activeClassName="is-active" to="/DC">
-                    Document Checklist
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink activeClassName="is-active" to="/AP">
-                    Application Process
-                  </NavLink>
-                </li>
-              </ul>
-            )}
-          </li> */}
           <li className="menu-item">
             <NavLink activeClassName="is-active" to="/Contact">
               Contact
