@@ -19,12 +19,11 @@ const Header = () => {
 
   const [isMenuSubMenu1, setMenuSubMenu1] = useState(false);
   const [isMenuSubMenu2, setMenuSubMenu2] = useState(false);
-  const [isMenuSubMenu3, setMenuSubMenu3] = useState(false);
 
   const handleSubmenuHover = (submenuStateSetter, newState) => {
     setMenuSubMenu1(false);
     setMenuSubMenu2(false);
-    setMenuSubMenu3(false);
+
     submenuStateSetter(newState);
   };
 
@@ -143,7 +142,7 @@ const Header = () => {
               </ul>
             )}
           </li>
-          <li
+          {/* <li
             className="menu-item sub__menus__arrows"
             onMouseEnter={() => handleSubmenuHover(setMenuSubMenu3, true)}
             onMouseLeave={() => handleSubmenuHover(setMenuSubMenu3, false)}
@@ -170,7 +169,7 @@ const Header = () => {
                 </li>
               </ul>
             )}
-          </li>
+          </li> */}
           <li className="menu-item">
             <NavLink activeClassName="is-active" to="/Contact">
               Contact
