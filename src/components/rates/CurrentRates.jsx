@@ -1,4 +1,5 @@
 import React from 'react';
+import './currentRates.css';
 
 const CurrentRates = () => {
   return (
