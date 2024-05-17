@@ -12,6 +12,7 @@ import ARM from "../mortgages/ARM"
 import FRM from "../mortgages/FRM"
 import JL from "../mortgages/JL"
 import VA from "../mortgages/VA"
+import CalcApp from "../mortgageCalculator/CalcApp"
 
 
 const Pages = () => {
@@ -32,6 +33,7 @@ const Pages = () => {
 
 
           <Route exact path='/blog' component={Blog} />
+          <Route exact path='/CalcApp' component={CalcApp} />
           
           <Route exact path='/contact' component={Contact} />
         </Switch>

@@ -73,14 +73,9 @@ const Header = () => {
             {isMenuSubMenu1 && (
               <ul className="sub__menus">
                 <li>
-                  <a
-                    href="https://mortgage-calculator-tutorial.vercel.app/"
-                    className="is-active"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                <NavLink activeClassName="is-active" to="/CalcApp">
                     Mortgage Calculator
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink activeClassName="is-active" to="/ARM">
