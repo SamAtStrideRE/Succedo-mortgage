@@ -38,8 +38,8 @@ const Pages = () => {
           <Route exact path='/CalcApp' component={CalcApp} />
           <Route exact path='/CurrentRates' component={CurrentRates} />
           <Route exact path='/FAR' component={FAR} />
-          
-          
+         
+         
           <Route exact path='/contact' component={Contact} />
         </Switch>
         <Footer />

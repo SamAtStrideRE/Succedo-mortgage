@@ -1,9 +1,24 @@
 import React from 'react';
+import './FRM.css';
 
 const FRM = () => {
   return (
-    <div>
-      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam esse ullam rerum laboriosam placeat voluptate saepe unde omnis reiciendis minus, accusantium reprehenderit quos tempora perspiciatis praesentium, eligendi, sapiente nam repudiandae! Explicabo expedita pariatur voluptates perspiciatis magni recusandae facere tenetur, fugiat amet ducimus eligendi animi nihil ipsam quis consequuntur repellat natus vitae vel nobis enim. Pariatur, omnis! Placeat sequi eaque quaerat libero dolore suscipit explicabo. Consequuntur molestiae odit architecto voluptates incidunt autem laudantium. Necessitatibus quo voluptatem ducimus autem ratione ipsum vel deserunt nihil debitis optio, voluptate quos dignissimos dolores assumenda doloribus culpa nostrum illo quidem. Aspernatur sit ea tempore pariatur et!</h1>
+    <div className="frm-container">
+      <h1 className="frm-heading">Find Stability and Security with Succedo's Fixed-Rate Mortgage (FRM)</h1>
+      
+      <p className="frm-advantages">
+        Succedo's FRM offers you:
+      </p>
+      <ul className="frm-advantages-list">
+        <li>Stable monthly payments throughout the loan term</li>
+        <li>Predictable interest rates for easier budgeting</li>
+        <li>Protection from potential rate hikes in the future</li>
+        <li>Peace of mind knowing your mortgage payments won't fluctuate</li>
+      </ul>
+      <p className="frm-cta">
+        Ready to secure your dream home? Let Succedo Mortgage guide you through the process and provide you with the stability and security you deserve.
+      </p>
+      <button className="frm-apply-button">Apply Now</button>
     </div>
   );
 };

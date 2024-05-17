@@ -1,0 +1,57 @@
+/* FRM.css */
+
+.frm-container {
+    max-width: 800px;
+    margin: 50px;
+    padding: 40px;
+    text-align: center;
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+  }
+  
+  .frm-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .frm-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .frm-benefit {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .frm-benefit-list {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .frm-benefit-list li {
+    margin-bottom: 10px;
+  }
+  
+  .frm-cta {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .frm-apply-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .frm-apply-button:hover {
+    background-color: #0056b3;
+  }
+  

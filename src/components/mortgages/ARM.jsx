@@ -1,9 +1,19 @@
 import React from 'react';
+import './Arm.css'; 
 
 const ARM = () => {
   return (
-    <div>
-      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam esse ullam rerum laboriosam placeat voluptate saepe unde omnis reiciendis minus, accusantium reprehenderit quos tempora perspiciatis praesentium, eligendi, sapiente nam repudiandae! Explicabo expedita pariatur voluptates perspiciatis magni recusandae facere tenetur, fugiat amet ducimus eligendi animi nihil ipsam quis consequuntur repellat natus vitae vel nobis enim. Pariatur, omnis! Placeat sequi eaque quaerat libero dolore suscipit explicabo. Consequuntur molestiae odit architecto voluptates incidunt autem laudantium. Necessitatibus quo voluptatem ducimus autem ratione ipsum vel deserunt nihil debitis optio, voluptate quos dignissimos dolores assumenda doloribus culpa nostrum illo quidem. Aspernatur sit ea tempore pariatur et! soon</h1>
+    <div className="arm">
+      <h1>Adjustable-Rate Mortgage (ARM)</h1>
+      <p>
+        An Adjustable Rate Mortgage (ARM) offers flexibility, contrasting with fixed-rate mortgages where the interest rate remains constant. With an ARM, the interest rate periodically adjusts. Initially, ARM rates are lower than those of fixed-rate mortgages. Therefore, an ARM could be advantageous if you plan to own your home for a limited duration, anticipate future income growth, or find fixed mortgage rates prohibitively high.
+      </p>
+      <p>
+        At Succedo, we simplify the process with our Adjustable-Rate Mortgage Qualifier, providing tools and expertise to guide you effectively. Whether you're a first-time homebuyer or seasoned in the market, our aim is to empower you to make informed decisions.
+      </p>
+     
+      
+      <button className="apply-button">Apply Now</button>
     </div>
   );
 };
