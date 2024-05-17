@@ -13,6 +13,7 @@ import FRM from "../mortgages/FRM"
 import JL from "../mortgages/JL"
 import VA from "../mortgages/VA"
 import CalcApp from "../mortgageCalculator/CalcApp"
+import CurrentRates from "../rates/CurrentRates"
 
 
 const Pages = () => {
@@ -34,6 +35,7 @@ const Pages = () => {
 
           <Route exact path='/blog' component={Blog} />
           <Route exact path='/CalcApp' component={CalcApp} />
+          <Route exact path='/CurrentRates' component={CurrentRates} />
           
           <Route exact path='/contact' component={Contact} />
         </Switch>
