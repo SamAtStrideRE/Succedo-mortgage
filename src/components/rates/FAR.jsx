@@ -1,10 +1,11 @@
 import React from 'react';
-
+import './FAR.css'; 
 const FAR = () => {
-  return (
-    <div>
-      <h1>Coming soon</h1>
-    </div>
+    return (
+      <div className="factor">
+        <h1>Coming soon</h1>
+      </div>
+  
   );
 };
 

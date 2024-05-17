@@ -1,0 +1,14 @@
+
+.factor h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .factor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to 100% of viewport height */
+    background-color: white; /* Set background color to white */
+  }
+  
