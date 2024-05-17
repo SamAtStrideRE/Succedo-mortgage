@@ -1,9 +1,9 @@
 import React from 'react';
-import './currentRates.css';
+import './CurrentRates.css'; 
 
 const CurrentRates = () => {
   return (
-    <div>
+    <div className="container">
       <h1>Coming soon</h1>
     </div>
   );
