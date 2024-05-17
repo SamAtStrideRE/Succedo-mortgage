@@ -75,6 +75,7 @@ nav .menu span {
 }
 
 .main-menu {
+  
   display: flex;
   column-gap: 1.5rem;
   padding-right: 5em;
@@ -83,8 +84,13 @@ nav .menu span {
 }
 
 .main-menu a {
+  
   padding: 0.5rem;
   color: rgb(255, 255, 255);
+}
+.main-menu a:hover {
+  
+ text-decoration-line:underline ;
 }
 
 .sub__menus__arrows {
@@ -99,6 +105,7 @@ nav .menu span {
 }
 
 .sub__menus {
+  
   text-align: left;
   position: absolute;
   font-size: 15px;
@@ -114,9 +121,10 @@ nav .menu span {
   color: black;
 }
 .sub__menus a:hover {
-  background: rgba(243, 243, 243, 0.552);
+  background: rgb(255, 255, 255);
   transition: none;
   color: #224acd;
+  
 }
 
 .menu-item {
