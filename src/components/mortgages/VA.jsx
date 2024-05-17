@@ -1,9 +1,29 @@
 import React from 'react';
+import './VA.css'; 
 
 const VA = () => {
   return (
-    <div>
-      <h1>Coming Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus quia perferendis. Delectus debitis et praesentium facere dignissimos recusandae sed pariatur cum adipisci ad iure eum mollitia, rerum vero inventore, quia rem aliquam illo sequi at ab quas? Quasi dolores eligendi praesentium, cumque voluptas adipisci voluptatum, soluta eius accusamus voluptates quo laudantium officia veritatis rerum accusantium repudiandae officiis ipsum ipsam neque aliquid distinctio. Culpa illum dolorem officia rem omnis! Nobis laboriosam molestias sit eaque eius. Obcaecati quisquam libero totam! In neque sed adipisci sequi non corporis ut excepturi quae. Dolorem ea commodi autem facere doloribus consequuntur sit voluptas ullam quo!</h1>
+    <div className="va-container">
+      <h1>About VA Home Loans</h1>
+      <p>
+        A VA loan is a mortgage loan in the United States guaranteed by the U.S. Department of Veterans Affairs (VA). The loan may be issued by qualified lenders. The VA loan was designed to offer long-term financing to eligible American veterans or their surviving spouses (provided they do not remarry).
+      </p>
+      <p>
+        We’re here to make the VA home loan process easier, with tools and knowledge that will help guide you along the way, starting with our VA Loan Qualifier.
+      </p>
+      <p>
+        We’ll help you clearly see differences between loan programs, allowing you to choose the right one for you whether you’re a first-time home buyer or a repeat buyer.
+      </p>
+
+      <h2>The VA Loan Process</h2>
+      <ol>
+        <li>Complete our simple VA Loan Qualifier.</li>
+        <li>Receive options based on your unique criteria and scenario.</li>
+        <li>Compare mortgage interest rates and terms.</li>
+        <li>Choose the offer that best fits your needs.</li>
+      </ol>
+      
+      <button className="apply-button">Apply Now</button>
     </div>
   );
 };

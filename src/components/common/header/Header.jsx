@@ -97,18 +97,14 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="is-active" to="/JL">
+                  <NavLink activeClassName="is-active" to="/Jumbo">
                     Jumbo Loans
                   </NavLink>
                 </li>
                 <li>
-                  <a
-                    href="https://mortgage-calculator-tutorial.vercel.app/"
-                    className="is-active"
-                    target=""
-                    rel="noopener noreferrer"
-                  >
+                <NavLink activeClassName="is-active" to="/NonQM">
                     Non-QM Loan
+                  </NavLink>
                   </a>
                 </li>
               </ul>

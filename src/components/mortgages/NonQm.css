@@ -1,0 +1,58 @@
+body {
+    background-color: white; /* Set background color of the body to white */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Set a default font for the body */
+}
+
+.nonqm-container {
+    background-color: #f8f9fa; /* Light gray background for the container */
+    color: black; /* Set text color to black */
+    padding: 80px 20px 20px; /* Adjust padding with more space at the top */
+    text-align: center; /* Align text center */
+    max-width: 800px; /* Set a max-width for the container */
+    margin: 50px auto; /* Center the container horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.nonqm-container h1, .nonqm-container h2 {
+    font-size: 32px; /* Set font size for h1 and h2 */
+    margin-bottom: 20px; /* Add some margin below the headings */
+}
+
+.nonqm-container p {
+    width: 80%; /* Set width of paragraphs */
+    margin: 0 auto 20px; /* Center paragraphs horizontally and add margin below */
+    font-size: 18px; /* Set font size for paragraphs */
+    line-height: 1.6; /* Improve readability with line-height */
+    text-align: justify; /* Justify paragraph text */
+}
+
+.nonqm-container ol {
+    width: 80%; /* Set width of the ordered list */
+    margin: 0 auto 20px; /* Center the list horizontally and add margin below */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add padding to the left for proper indentation */
+}
+
+.nonqm-container ol li {
+    font-size: 18px; /* Set font size for list items */
+    line-height: 1.6; /* Improve readability with line-height */
+    margin-bottom: 10px; /* Add margin below each list item */
+}
+
+.nonqm-container button {
+    margin-top: 20px; /* Add margin to top of button */
+    padding: 15px 30px; /* Add padding to button */
+    font-size: 18px; /* Set font size */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nonqm-container button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
