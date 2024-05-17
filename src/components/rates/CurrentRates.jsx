@@ -3,7 +3,7 @@ import './CurrentRates.css';
 
 const CurrentRates = () => {
   return (
-    <div className="container">
+    <div className="currentrates">
       <h1>Coming soon</h1>
     </div>
   );
