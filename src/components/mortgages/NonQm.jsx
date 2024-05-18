@@ -1,9 +1,14 @@
 import React from 'react';
-import './NonQm.css'; 
+import './NonQm.css';
+import nonqmImage from '../image/nonqm.jpg'; // Import the image
 
 const NonQM = () => {
   return (
     <div className="nonqm-container">
+      <div className="nonqm-image-container">
+        <img src={nonqmImage} alt="Non-QM Home Loans" className="nonqm-image" />
+        <div className="overlay-text-nonqm">Non-QM Home Loans</div> {/* Text overlay */}
+      </div>
       <h1>About Non-QM Home Loans</h1>
       <p>
         A Non-QM (Non-Qualified Mortgage) loan is designed for borrowers who may not meet the strict criteria of conventional mortgage loans. These loans provide flexibility for those with unique financial situations, such as self-employed individuals, investors, or those with credit issues.
@@ -18,7 +23,8 @@ const NonQM = () => {
       <h2>The Non-QM Loan Process</h2>
       <ol>
         <li>Complete our straightforward Non-QM Loan Qualifier.</li>
-        <li>Receive personalized options based on your unique criteria and scenario.</li>
+        <li>Receive personalized options based on your unique.</li>
+
         <li>Compare mortgage interest rates and terms.</li>
         <li>Choose the offer that best fits your needs.</li>
       </ol>

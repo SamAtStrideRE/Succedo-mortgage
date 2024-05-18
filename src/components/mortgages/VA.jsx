@@ -1,9 +1,14 @@
 import React from 'react';
-import './VA.css'; 
+import './VA.css';
+import vaImage from "../image/va.jpg"; // Import the image
 
 const VA = () => {
   return (
-    <div className="va-container">
+    <div>
+      <div className="va-image-container">
+        <img src={vaImage} alt="VA Home Loans" className="va-image" /> {/* Add the image */}
+        <div className="overlay-text-va"> VA Home Loans </div> {/* Text overlay */}
+      </div>
       <h1>About VA Home Loans</h1>
       <p>
         A VA loan is a mortgage loan in the United States guaranteed by the U.S. Department of Veterans Affairs (VA). The loan may be issued by qualified lenders. The VA loan was designed to offer long-term financing to eligible American veterans or their surviving spouses (provided they do not remarry).

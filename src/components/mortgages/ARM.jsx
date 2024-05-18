@@ -1,18 +1,47 @@
 import React from 'react';
-import './Arm.css'; 
+import './Arm.css'; // Import your CSS file
+import armImage from "../image/arm.jpg";
 
 const ARM = () => {
   return (
-    <div className="arm">
-      <h1>Adjustable-Rate Mortgage (ARM)</h1>
-      <p>
-        An Adjustable Rate Mortgage (ARM) offers flexibility, contrasting with fixed-rate mortgages where the interest rate remains constant. With an ARM, the interest rate periodically adjusts. Initially, ARM rates are lower than those of fixed-rate mortgages. Therefore, an ARM could be advantageous if you plan to own your home for a limited duration, anticipate future income growth, or find fixed mortgage rates prohibitively high.
-      </p>
-      <p>
-        At Succedo, we simplify the process with our Adjustable-Rate Mortgage Qualifier, providing tools and expertise to guide you effectively. Whether you're a first-time homebuyer or seasoned in the market, our aim is to empower you to make informed decisions.
-      </p>
-     
-      
+    <div className="arm-container">
+     <div className="image-container">
+  {/* Image with text overlay */}
+  <div className="image-overlay">
+    <img src={armImage} alt="Adjustable Rate Mortgage" className="arm-image" />
+    <div className="overlay-text-arm">Adjustable-Rate Mortgage</div> {/* Text overlay */}
+  </div>
+</div>
+
+      <div className="arm-content">
+        <h1 className="arm-title">Is an adjustable-rate mortgage (ARM) right for you?</h1>
+        <h1 className="arm-title">Exploring Adjustable-Rate Mortgage Options</h1>
+        <p>
+          An ARM, or Adjustable Rate Mortgage, offers a dynamic alternative to traditional fixed-rate mortgages. While fixed-rate mortgages maintain a constant interest rate throughout the loan term, an ARM's interest rate adjusts periodically.
+        </p>
+        <p>
+          Why consider an ARM? The initial interest rate is typically lower than that of a fixed-rate mortgage. This makes an ARM an attractive choice if you anticipate owning your home for a limited time, foresee future income growth, or find fixed mortgage rates unreasonably high.
+        </p>
+        <p>
+          Navigating the mortgage landscape can be daunting, but we're here to simplify the journey with our Adjustable-Rate Mortgage Qualifier.
+        </p>
+        <h2>Our Process:</h2>
+        <ol>
+          <li>Complete the Adjustable Rate Mortgage Qualifier: Provide us with your details to kickstart the process.</li>
+          <li>Receive Tailored Options: Based on your unique circumstances, we'll present you with personalized mortgage options.</li>
+          <li>Compare and Choose: Delve into the details of interest rates and terms to select the option that aligns best with your needs.</li>
+        </ol>
+        <h2>Why Choose an ARM?</h2>
+        <p>
+          Many homeowners opt for ARMs initially for the lower initial payment, then consider refinancing as the fixed period concludes. When the interest rate becomes adjustable, homeowners have the flexibility to refinance into another ARM, switch to a fixed-rate mortgage, or explore selling the property.
+        </p>
+        <p>
+          Empower yourself to make informed decisions about your mortgage journey. Whether you're a first-time buyer or a seasoned homeowner, we're committed to guiding you every step of the way.
+        </p>
+        <p>
+          Ready to explore your options? Let's embark on this journey together.
+        </p>
+      </div>
       <button className="apply-button">Apply Now</button>
     </div>
   );

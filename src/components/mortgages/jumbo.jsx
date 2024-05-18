@@ -1,9 +1,14 @@
 import React from 'react';
-import './jumbo.css'; 
+import './jumbo.css';
+import jumboImage from '../image/jumbo.jpg'; // Import the image
 
 const Jumbo = () => {
   return (
     <div className="jumbo-container">
+      <div className="jumbo-image-container">
+        <img src={jumboImage} alt="Jumbo Home Loans" className="jumbo-image" />
+        <div className="overlay-text-jumbo">Federal Housing Administration </div> {/* Text overlay */}
+      </div>
       <h1>About Jumbo Home Loans</h1>
       <p>
         A jumbo loan is a loan that exceeds the conforming loan limits as set by Fannie Mae and Freddie Mac. As of 2022, the limit is $647,200 for most of the US, apart from Alaska, Hawaii, Guam, and the U.S. Virgin Islands, where the limit is $970,800. Rates tend to be a bit higher on jumbo loans because lenders generally have a higher risk.
