@@ -119,7 +119,7 @@ const Header = () => {
             {isMenuSubMenu2 && (
               <ul className="sub__menus">
                 <li>
-                  <NavLink activeClassName="is-active" to="/CurrentRates">
+                  <NavLink activeClassName="is-active" to="/Refinance">
                     Refinance
                   </NavLink>
                 </li>

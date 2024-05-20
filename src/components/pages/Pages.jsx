@@ -12,7 +12,7 @@ import jumbo from "../mortgages/jumbo"
 import VA from "../mortgages/VA"
 import NonQM from "../mortgages/NonQm"
 import CalcApp from "../mortgageCalculator/CalcApp"
-import CurrentRates from "../rates/CurrentRates"
+
 import FAR from "../rates/FAR"
 import Refinance from "../tools/Refinance"
 
@@ -39,6 +39,9 @@ const Pages = () => {
           <Route exact path='/CalcApp' component={CalcApp} />
           <Route exact path='/Refinance' component={Refinance} />
           <Route exact path='/FAR' component={FAR} />
+
+          
+
          
          
           <Route exact path='/contact' component={Contact} />
