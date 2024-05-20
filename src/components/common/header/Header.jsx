@@ -114,13 +114,13 @@ const Header = () => {
             onMouseLeave={() => handleSubmenuHover(setMenuSubMenu2, false)}
           >
             <Link to="#">
-              Rates {isMenuSubMenu2 ? <FiChevronUp /> : <FiChevronDown />}
+              Resources {isMenuSubMenu2 ? <FiChevronUp /> : <FiChevronDown />}
             </Link>
             {isMenuSubMenu2 && (
               <ul className="sub__menus">
                 <li>
                   <NavLink activeClassName="is-active" to="/CurrentRates">
-                    Current rates
+                    Refinance
                   </NavLink>
                 </li>
                 <li>
