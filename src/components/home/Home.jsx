@@ -2,9 +2,8 @@ import React from "react"
 // import Header from "../common/header/Header.jsx"
 import Featured from "./featured/Featured"
 import Hero from "./hero/Hero"
-import ReviewList from "../reviewCard/ReviewList"
-// import Price from "./price/Price"
-// import Team from "./team/Team"
+import ReviewCarousel from "../reviewCard/ReviewCarousel"
+
 
 const Home = () => {
   return (
@@ -12,7 +11,7 @@ const Home = () => {
       {/* <Header/> */}
       <Hero />
       <Featured />
-      <ReviewList/>
+      <ReviewCarousel/>
       {/* <Awards /> */}
       {/* <Team /> */}
       {/* <Price /> */}

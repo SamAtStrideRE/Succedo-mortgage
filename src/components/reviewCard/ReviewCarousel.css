@@ -1,0 +1,79 @@
+/* src/styles.css */
+
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 1 0 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.carousel-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.review-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-content h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.review-content p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.review-rating {
+  color: gold;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 95%;
+  }
+
+  .carousel-item {
+    flex: 1 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
