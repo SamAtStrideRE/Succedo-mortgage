@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Home from "../home/Home"
 import Footer from "../common/footer/Footer"
 import About from "../about/About"
-
-import Blog from "../blog/Blog"
 import FHA from "../mortgages/FHA"
 import Contact from "../contact/Contact"
 import ARM from "../mortgages/ARM"
@@ -36,7 +34,7 @@ const Pages = () => {
           <Route exact path='/NonQM' component={NonQM} />
 
 
-          <Route exact path='/blog' component={Blog} />
+          
           <Route exact path='/CalcApp' component={CalcApp} />
           <Route exact path='/CurrentRates' component={CurrentRates} />
           <Route exact path='/FAR' component={FAR} />
