@@ -1,10 +1,12 @@
 // Refinance.jsx
 import React from 'react';
 import './Refinance.css';
+import BoxWithContactInfo from '../elements/BoxWithContactInfo'
 
 const Refinance = () => {
   return (
     <div className="refinance-container">
+      <BoxWithContactInfo />
       <h1>Refinancing Your Home</h1>
       <p>
         Refinancing is often used to lower your interest rate. If rates have dropped since you last financed your home, you may want to consider refinancing. Other common reasons to refinance include paying off a balloon payment, converting an adjustable rate loan to a fixed rate loan, or to extract cash equity in your home (cash out). A few reasons for cashing out include: home improvement, an education fund, and consolidating debt.
@@ -25,8 +27,8 @@ const Refinance = () => {
         <li>Verification of Assets and Income</li>
       </ul>
       <div className="refinance-buttons">
-        <a href="/apply" className="refinance-button">Click Here to Apply Now</a>
-        <a href="/paperwork" className="refinance-button">Click Here To See Paperwork Needed</a>
+        <a href="/apply" className="refinance-button">Apply Now</a>
+        <a href="/paperwork" className="refinance-button">See Paperwork Needed</a>
       </div>
     </div>
   );

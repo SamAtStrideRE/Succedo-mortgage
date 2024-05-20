@@ -1,0 +1,48 @@
+/* BoxWithContactInfo.css */
+.contact-box {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Ensure the background is white */
+    color: #333333; /* Ensure text is dark enough to be visible */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .apply-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-now-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+  }
+  
