@@ -3,17 +3,31 @@
   border-radius: 6px;
   text-align: center;
   padding: 30px;
-  cursor: pointer;
+  
   min-width: 300px;
   min-height: auto;
 }
 
 .featured img {
-  width: 65px;
-  height: 65px;
+  width: 75px;
+  height:75px;
   margin: auto;
 }
 
+.benefits {
+  margin-top: 20px;
+}
+
+.benefits-item {
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.benefits-icon {
+  color: green;
+  margin-right: 5px;
+}
 
 
 /* .buttons {
