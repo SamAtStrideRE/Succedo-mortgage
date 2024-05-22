@@ -1,13 +1,13 @@
 import React from 'react';
-import './VA.css';
-import vaImage from "../image/va.jpg"; // Import the image
-
+import './VA.css'; // Import the CSS file
+import vaImage from "../image/loans.jpg"; // Import the image
 const VA = () => {
   return (
     <div>
-      <div className="va-image-container">
-        <img src={vaImage} alt="VA Home Loans" className="va-image" /> {/* Add the image */}
-        <div className="overlay-text-va"> VA Home Loans </div> {/* Text overlay */}
+         <div className="va-image-container"> {/* Use jumbo-image-container class */}
+      <div className="overlayv"></div> {/* Black gradient overlay */}
+        <img src={vaImage} alt="va" className="va-image" /> {/* Use jumbo-image class */}
+        <div className="overlay-text-va"> VA Home Loans</div> {/* Text overlay */}
       </div>
       <h1>About VA Home Loans</h1>
       <p>

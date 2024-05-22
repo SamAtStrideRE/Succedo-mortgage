@@ -1,13 +1,16 @@
 import React from 'react';
 import './NonQm.css';
-import nonqmImage from '../image/nonqm.jpg'; // Import the image
+import nonqmImage from "../image/loans.jpg";
 
 const NonQM = () => {
   return (
     <div className="nonqm-container">
-      <div className="nonqm-image-container">
-        <img src={nonqmImage} alt="Non-QM Home Loans" className="nonqm-image" />
+       <div>
+         <div className="nonqm-image-container"> {/* Use jumbo-image-container class */}
+      <div className="overlayn"></div> {/* Black gradient overlay */}
+        <img src={nonqmImage} alt="nonqm" className="va-image" /> {/* Use jumbo-image class */}
         <div className="overlay-text-nonqm">Non-QM Home Loans</div> {/* Text overlay */}
+      </div>
       </div>
       <h1>About Non-QM Home Loans</h1>
       <p>

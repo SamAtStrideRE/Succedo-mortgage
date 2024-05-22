@@ -1,13 +1,14 @@
 import React from 'react';
-import './FHA.css';
-import fhaImage from "../image/fha.jpg"; // Import the image
+import './FHA.css'; // Import your CSS file
+import loansImage from "../image/loans.jpg"; // Import the image
 
 const FHA = () => {
   return (
     <div className="fha-container">
-      <div className="fha-image-container">
-        <img src={fhaImage} alt="Fixed-Rate Mortgage" className="fha-image" />
-        <div className="overlay-text-fha">Federal Housing Administration </div> {/* Text overlay */}
+      <div className="fha-image-container"> {/* Use the same class name */}
+        <img src={loansImage} alt="Loans" className="fha-image" /> {/* Use the same class name for the image */}
+        <div className="overlayh"></div> {/* Use the same class name for the overlay */}
+        <div className="overlay-text-fha">Federal Housing Administration loan</div> {/* Use the same class name for the text overlay */}
       </div>
       <h1 className="fha-heading">Unlock Your Dream Home with Succedo's FHA Home Loans</h1>
       <p className="fha-intro">
