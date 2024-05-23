@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
   height: 12vh;
   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
   padding: 15px 0;
@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .header-scroll {
@@ -65,7 +66,7 @@ nav .menu {
 nav .menu span {
   height: 0.3rem;
   width: 100%;
-  background-color: #fff;
+  background-color: #1c1c1c;
   border-radius: 0.2rem;
 }
 
@@ -86,7 +87,7 @@ nav .menu span {
 .main-menu a {
   
   padding: 0.5rem;
-  color: rgb(255, 255, 255);
+  color: #000;
 }
 .main-menu a:hover {
   
@@ -98,7 +99,7 @@ nav .menu span {
 }
 
 .sub__menus__arrows a {
-  color: rgb(255, 255, 255);
+  color: #000;
   display: flex;
   align-items: center;
   column-gap: 0.2rem;

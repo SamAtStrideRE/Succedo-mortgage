@@ -6,7 +6,7 @@ import "./header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [color, setColor] = useState(false);
+  // const [color, setColor] = useState(false);
   const [isMenuSubMenu1, setMenuSubMenu1] = useState(false);
   const [isMenuSubMenu2, setMenuSubMenu2] = useState(false);
 
@@ -16,20 +16,20 @@ const Header = () => {
     submenuStateSetter(newState);
   };
 
-  useEffect(() => {
-    const changeColor = () => {
-      setColor(window.scrollY >= 0);
-    };
+  // useEffect(() => {
+  //   const changeColor = () => {
+  //     setColor(window.scrollY >= 0);
+  //   };
 
-    window.addEventListener("scroll", changeColor);
+  //   window.addEventListener("scroll", changeColor);
 
-    return () => {
-      window.removeEventListener("scroll", changeColor);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", changeColor);
+  //   };
+  // }, []);
 
   return (
-    <header className={color ? "header header-scroll" : "header header__middle"}>
+    <header className={ "header  header__middle"}>
       <div className="header__middle__logo">
         <NavLink exact activeClassName="is-active" to="/">
           <img src={logo} alt="logo" />
