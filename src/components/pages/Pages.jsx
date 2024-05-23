@@ -18,7 +18,7 @@ import Refinance from "../tools/Refinance"
 import QuickQuoteForm from "../tools/QuickQuoteForm"
 import RA from "../rates/RA"
 import PaperworksModal from "../tools/PaperworksModal"
-
+import RateTrends from "../rates/RateTrends"
 
 const Pages = () => {
   return (
@@ -45,6 +45,7 @@ const Pages = () => {
           <Route exact path='/RA' component={RA} />
           <Route exact path='/QuickQuoteForm' component={QuickQuoteForm} />
           <Route exact path='/FAR' component={FAR} />
+          <Route exact path='/RateTrends' component={RateTrends} />
 
           
 
