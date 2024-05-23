@@ -164,7 +164,7 @@ const Header = () => {
           <li className="menu-item">
             <a href="tel:18328886368" className="phone-icon">
               <FiPhone />
-              (+183) 2888-6368
+              +1 (832) 888-6368
             </a>
           </li>
         </ul>
