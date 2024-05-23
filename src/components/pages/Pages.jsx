@@ -16,7 +16,7 @@ import CalcApp from "../mortgageCalculator/CalcApp"
 import FAR from "../rates/FAR"
 import Refinance from "../tools/Refinance"
 import QuickQuoteForm from "../tools/QuickQuoteForm"
-import RA from "../rates/RA"
+import RAC from "../rates/RAC"
 import PaperworksModal from "../tools/PaperworksModal"
 import RateTrends from "../rates/RateTrends"
 
@@ -42,7 +42,7 @@ const Pages = () => {
           <Route exact path='/CalcApp' component={CalcApp} />
           <Route exact path='/Refinance' component={Refinance} />
           <Route exact path='/PaperworksModal' component={PaperworksModal} />
-          <Route exact path='/RA' component={RA} />
+          <Route exact path='/RAC' component={RAC} />
           <Route exact path='/QuickQuoteForm' component={QuickQuoteForm} />
           <Route exact path='/FAR' component={FAR} />
           <Route exact path='/RateTrends' component={RateTrends} />

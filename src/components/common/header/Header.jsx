@@ -124,7 +124,7 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="is-active" to="/RA">
+                  <NavLink activeClassName="is-active" to="/RAC">
                     Refinance Analysis
                   </NavLink>
                 </li>
