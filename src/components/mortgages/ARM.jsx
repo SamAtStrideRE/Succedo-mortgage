@@ -1,16 +1,20 @@
 import React from 'react';
+<<<<<<< HEAD
 import './ARM.css'; // Import your CSS file
 import armImage from "../image/arm.jpg";
+=======
+import './Arm.css'; // Import your CSS file
+import armImage from "../image/loans.jpg"; // Import the image
+>>>>>>> af567e631f52905730887e99b2502343fe9a4e5a
 
 const ARM = () => {
   return (
-    <div className="arm-container">
-     <div className="image-container">
-  {/* Image with text overlay */}
-  <div className="image-overlay">
-    <img src={armImage} alt="Adjustable Rate Mortgage" className="arm-image" />
-    <div className="overlay-text-arm">Adjustable-Rate Mortgage</div> {/* Text overlay */}
-  </div>
+    <div>
+    <div className="arm-image-container"> {/* Use jumbo-image-container class */}
+ <div className="overlayarm"></div> {/* Black gradient overlay */}
+   <img src={armImage} alt="va" className="arm-image" /> {/* Use jumbo-image class */}
+   <div className="overlay-text-arm"> Arm Home Loans</div> {/* Text overlay */}
+
 </div>
 
       <div className="arm-content">
