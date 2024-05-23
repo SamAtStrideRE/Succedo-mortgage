@@ -1,14 +1,83 @@
+/* src/styles/FAR.css */
+.far-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
 
-.factor h1 {
-    font-size: 24px;
-    color: rgb(141, 141, 57);
-  }
-  
-  .factor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Set height to 100% of viewport height */
-    background-color: white; /* Set background color to white */
-  }
-  
+.far-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideInDown 1s ease-in-out;
+}
+
+.far-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.far-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  animation: slideInUp 0.5s ease-in-out;
+}
+
+.far-item.left {
+  flex-direction: row;
+}
+
+.far-item.right {
+  flex-direction: row-reverse;
+}
+
+.far-image {
+  max-width: 450px;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.far-text {
+  flex: 1;
+}
+
+.far-text h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.far-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+

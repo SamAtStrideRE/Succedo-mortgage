@@ -18,7 +18,7 @@ const Header = () => {
 
   useEffect(() => {
     const changeColor = () => {
-      setColor(window.scrollY >= 300);
+      setColor(window.scrollY >= 0);
     };
 
     window.addEventListener("scroll", changeColor);
