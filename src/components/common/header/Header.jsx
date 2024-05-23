@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FiChevronDown, FiChevronUp, FiPhone } from "react-icons/fi";
 import logo from "../../../images/logo-light.png";
