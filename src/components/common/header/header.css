@@ -153,6 +153,10 @@ nav .menu span {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
+}
+.main-menu .apply-btn {
+  color: #fff;
 }
 .header-scroll .main-menu .apply-btn {
   color: #fff;
