@@ -1,65 +1,82 @@
 .rate-trends-container {
-    /* Your existing styles for the container */
-}
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
   
-.rate-trends-container h2 {
-    font-size: 24px;
-    font-weight: bold;
-}
+  .rate-trends-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff;
+    animation: slideInDown 1s ease-in-out;
+  }
   
-.rateimage-container {
+  .rate-trends-content {
     display: flex;
-    justify-content: center; /* Center the images horizontally */
-}
-  
-.rateimage-box {
-    margin: 0; /* Remove default margin */
-    padding: 50px; /* Remove default padding */
-    position: relative; /* Position context for absolute positioning */
-}
-  
-.rateimage-box img {
-    width: 200px; /* Set the width of the images */
-    height: auto; /* Maintain aspect ratio */
-}
-  
-.rateimage-button {
-    position: absolute;
-    top: 90%; /* Adjust top position */
-    left: 50%; /* Adjust left position */
-    transform: translate(-50%, -50%); /* Center the button */
-    background-color: #033f80; /* Change button background color */
-    color: #fff; /* Change button text color */
-    padding: 8px 16px; /* Adjust button padding */
-    font-size: 14px; /* Adjust button font size */
-    border: none; /* Remove button border */
-    border-radius: 4px; /* Add button border radius */
-}
-.ratetrends-image{
-  width: 100%;
-  height: 350px;
-  object-fit: cover; /* Ensure the image covers the container without distortion */
-  object-position: center; /* Center the image within its container */
-
-}
-.overlayrate{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height:49%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    flex-direction: column;
+    gap: 40px;
   }
-  .overlay-text-rate{
-    position: absolute; /* Position the text absolutely */
-    top: 150px; /* Adjust top position */
-    right: 550px; /* Adjust right position */
-    color: white; /* Text color */
-    font-size: 36px; /* Font size */
-    font-weight: bold; /* Font weight */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
-  }
-
- 
   
+  .rate-trends-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 0.5s ease-in-out;
+  }
+  
+  .rate-trends-item.left {
+    flex-direction: row;
+  }
+  
+  .rate-trends-item.right {
+    flex-direction: row-reverse;
+  }
+  
+  .rate-trends-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .rate-trends-text {
+    flex: 1;
+  }
+  
+  .rate-trends-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .rate-trends-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes slideInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
   

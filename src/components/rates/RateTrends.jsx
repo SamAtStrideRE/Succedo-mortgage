@@ -1,39 +1,48 @@
 import React from 'react';
 import './RateTrends.css';
-import revers from "../image/revers.png";
-import houses from "../image/houses.jpg";
-import dollor from "../image/dollor.jpg";
-import ratetrends from "../image/ratetrends.jpg";
 
 const RateTrends = () => {
+  const trends = [
+    {
+      title: "Current Mortgage Rates",
+      content: "Mortgage rates have remained relatively low this year, with the average 30-year fixed-rate mortgage hovering around 3.5%. This is an excellent opportunity for both first-time homebuyers and those looking to refinance.",
+      imgSrc: "images/mortgage-rates.jpg",
+    },
+    {
+      title: "Real Estate Market Trends",
+      content: "The real estate market has seen significant growth, with home prices rising due to increased demand and limited inventory. Urban areas are experiencing a resurgence, while suburban markets continue to thrive.",
+      imgSrc: "images/real-estate-trends.jpg",
+    },
+    {
+      title: "Federal Reserve Policies",
+      content: "The Federal Reserve's monetary policies, including interest rate adjustments and bond-buying programs, significantly influence mortgage rates. Keeping an eye on Fed announcements can provide insights into future rate movements.",
+      imgSrc: "images/federal-reserve.jpg",
+    },
+    {
+      title: "Inflation Impact",
+      content: "Inflation trends directly impact mortgage rates. As inflation rises, lenders may increase rates to protect their investments' real returns. Monitoring inflation indicators can help predict rate changes.",
+      imgSrc: "images/inflation-impact.jpg",
+    },
+    {
+      title: "Global Economic Factors",
+      content: "Global economic events, such as trade policies and geopolitical tensions, can affect mortgage rates. These factors influence investor confidence and the demand for mortgage-backed securities.",
+      imgSrc: "images/global-economy.jpg",
+    }
+  ];
+
   return (
     <div className="rate-trends-container">
-      <div className="overlayrate"></div>
-      <div className="ratetrends">
-        <img src={ratetrends} alt="ratetrends" className="ratetrends-image" />
-        <div className="overlay-text-rate">Mortgage Rate Trends</div> {/* Text overlay */}
-      </div>
-     
-    
-      <p>In the past few years, homebuyers have faced a challenging “double whammy” as both mortgage rates and home prices have shot up. This squeeze on affordability has limited the purchasing power of many aspiring homeowners.</p>
-     
-      <p>While the broader trends provide valuable context, it’s important to recognize that average mortgage rates are just a benchmark. Borrowers with healthy credit profiles and strong finances often get mortgage rates well below the industry norm.</p>
-      <p>So rather than looking only at average rates, check your personalized rates to see what you qualify for.</p>
-   
-      <h2>Find your lowest mortgage rate. Start here:</h2>
-      <div className="rateimage-container">
-        <div className="rateimage-box">
-          <img src={revers} alt="rateImage 1" />
-          <button className="rateimage-button">Refinance Rates</button>
-        </div>
-        <div className="rateimage-box">
-          <img src={houses} alt="rateImage 2" />
-          <button className="rateimage-button">Home Purchase Rates</button>
-        </div>
-        <div className="rateimage-box">
-          <img src={dollor} alt="rateImage 3" />
-          <button className="rateimage-button">New Rates.</button>
-        </div>
+      <h1 className="rate-trends-title">Rate Trends in Mortgages</h1>
+      <div className="rate-trends-content">
+        {trends.map((trend, index) => (
+          <div className={`rate-trends-item ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
+            <img src={trend.imgSrc} alt={trend.title} className="rate-trends-image"/>
+            <div className="rate-trends-text">
+              <h2>{trend.title}</h2>
+              <p>{trend.content}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
