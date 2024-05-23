@@ -3,8 +3,8 @@
     max-width: 300px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* Ensure the background is white */
-    color: #333333; /* Ensure text is dark enough to be visible */
+    background-color: #1c2250; /* Ensure the background is white */
+    color: #f5f5f5; /* Ensure text is dark enough to be visible */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;

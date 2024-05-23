@@ -124,6 +124,11 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink activeClassName="is-active" to="/QuickQuoteForm">
+                    Quick Qoute
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink activeClassName="is-active" to="/FAR">
                     Factors Affecting Rates
                   </NavLink>
