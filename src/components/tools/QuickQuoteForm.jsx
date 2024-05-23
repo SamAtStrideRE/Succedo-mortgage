@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './QuickQuoteForm.css';
+import quotemage from "../image/quickquote.jpg"; // Import the image
 
 const QuickQuoteForm = () => {
   const [formData, setFormData] = useState({
@@ -28,17 +29,22 @@ const QuickQuoteForm = () => {
   };
 
   return (
-    <form className="quick-quote-form" onSubmit={handleSubmit}>
-      <h2>Quick Quote Form</h2>
-      <div className="form-group">
-        <label htmlFor="firstName">First Name:</label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
+    <div className="quick-quoteimage-container"> {/* Use container class */}
+      <div className="overlayquick-quote"></div> {/* Black gradient overlay */}
+      <img src={quotemage} alt="va" className="quick-quote-image" /> {/* Use image class */}
+      <div className="overlay-text-quick-quote">Quick Quote Form</div> {/* Text overlay */}
+    
+      <form className="quick-quote-form" onSubmit={handleSubmit}>
+       
+        <div className="form-group">
+          <label htmlFor="firstName">First Name:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
         />
       </div>
       <div className="form-group">
@@ -138,6 +144,7 @@ const QuickQuoteForm = () => {
       </div>
       <button className='qqButton' type="submit">Submit</button>
     </form>
+    </div>
   );
 };
 
