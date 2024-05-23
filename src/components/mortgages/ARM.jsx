@@ -1,11 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
-import './ARM.css'; // Import your CSS file
-import armImage from "../image/arm.jpg";
-=======
 import './Arm.css'; // Import your CSS file
 import armImage from "../image/loans.jpg"; // Import the image
->>>>>>> af567e631f52905730887e99b2502343fe9a4e5a
+
 
 const ARM = () => {
   return (
