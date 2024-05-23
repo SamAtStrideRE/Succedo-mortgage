@@ -57,7 +57,7 @@ const RAC = () => {
           />
         </div>
         <div className="input-group">
-          <label>New Loan Term (Years):</label>
+          <label>New Loan Term (years):</label>
           <input
             type="number"
             value={newLoanTerm}
