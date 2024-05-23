@@ -91,7 +91,7 @@ nav .menu span {
 }
 .main-menu a:hover {
   
- text-decoration-line:underline ;
+ /* text-decoration-line:underline ; */
 }
 
 .sub__menus__arrows {
@@ -158,11 +158,10 @@ nav .menu span {
 .main-menu .apply-btn {
   color: #fff;
 }
-.header-scroll .main-menu .apply-btn {
-  color: #fff;
-}
+
 
 .main-menu .apply-btn:hover {
+  background-color: #ff0000;
   color: #fff;
 }
 
