@@ -6,37 +6,38 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Style the container for the ARM component */
-.arm-container {
-  text-align: center;
-  padding: 20px;
-  position: relative; /* Make the container relative for absolute positioning */
-}
-
-/* Style the container for the image */
-.image-container {
+.arm-image-container{
   width: 100%;
-  height: 65vh; /* Adjust the height as needed */
+  height: 67vh; /* Adjust the height as needed */
   overflow: hidden;
   margin-bottom: 20px;
-  position: relative; /* Make the container relative for absolute positioning */
+  position: relative; /* Add position relative to contain absolute overlay */
 }
 
 /* Style the image */
-.arm-image {
+.arm-image{
   width: 100%;
-  height: 100%;
+  height: 100vh; /* Set the height to half of the viewport height */
   object-fit: cover; /* Ensure the image covers the container without distortion */
-  object-position: center; /* Center the image within its container */
+  object-position: center bottom; /* Position the image to show the top half */
+  margin-bottom: 20px;
+}
+.overlay-text-arm{
+  position: absolute;
+  top: 50%; /* Adjust top position */
+  left: 50%; /* Adjust left position */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Style the text overlay */
-.overlay-text-arm {
+.overlayarm{
   position: absolute;
-  bottom: 10px; /* Adjust this value to move the text vertically */
-  right: 10px; /* Adjust this value to move the text horizontally */
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5); /* Add shadow for better visibility */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }

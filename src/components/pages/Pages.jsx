@@ -15,6 +15,7 @@ import CalcApp from "../mortgageCalculator/CalcApp"
 
 import FAR from "../rates/FAR"
 import Refinance from "../tools/Refinance"
+import QuickQuoteForm from "../tools/QuickQuoteForm"
 
 
 const Pages = () => {
@@ -38,6 +39,7 @@ const Pages = () => {
           
           <Route exact path='/CalcApp' component={CalcApp} />
           <Route exact path='/Refinance' component={Refinance} />
+          <Route exact path='/QuickQuoteForm' component={QuickQuoteForm} />
           <Route exact path='/FAR' component={FAR} />
 
           

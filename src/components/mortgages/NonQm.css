@@ -1,96 +1,116 @@
-/* Add these styles to your NonQm.css file */
-
 /* Set margin and padding to 0 for the whole page */
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the container for the NonQM component */
-  .nonqm-container {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-  }
-  
-  /* Style the container for the image */
-  .nonqm-image-container {
-    width: 100%;
-    height: 67vh; /* Adjust the height as needed */
-    overflow: hidden;
-    margin-bottom: 20px;
-    position: relative; /* Add position relative to contain absolute overlay */
-  }
-  
-  /* Style the image */
-  .nonqm-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the container without distortion */
-    object-position: center bottom; /* Center the image horizontally and cut the top portion */ /* Center the image within its container */
-    /* Style the image */
+  margin: 0;
+  padding: 0;
+}
 
-  
-    object-position: center; /* Center the image horizontally and crop from the top */
-  }
-  
-  
-  
-  /* Style the heading */
-  h1 {
-    font-size: 28px; /* Set the font size for the heading */
-    margin: 20px auto; /* Center the heading horizontally */
-  }
-  
-  /* Style the introductory paragraph */
-  p {
-    width: 80%;
-    margin: 0 auto 20px;
-    font-size: 18px; /* Set the font size for the introductory paragraph */
-    line-height: 1.6; /* Set the line height */
-    text-align: justify;
-  }
-  
-  /* Style the list of benefits */
-  ol {
-    width: 80%;
-    margin: 0 auto 20px;
-    text-align: left; /* Align the list items to the left */
-    padding-left: 20px;
-    list-style-position: inside;
-  }
-  
-  /* Style the individual benefits */
-  ol li {
-    font-size: 18px; /* Set the font size for list items */
-    line-height: 1.6; /* Set the line height */
-    margin-bottom: 10px; /* Add space below each list item */
-  }
-  
-  /* Style the apply button */
-  .apply-button {
-    padding: 10px 20px; /* Add padding to the button */
-    font-size: 18px; /* Set the font size for the button */
-    background-color: #007bff; /* Set the background color for the button */
-    color: white; /* Set the text color for the button */
-    border: none; /* Remove the button border */
-    border-radius: 5px; /* Add border radius to the button */
-    cursor: pointer; /* Set cursor to pointer for better interactivity */
-    transition: background-color 0.3s; /* Add a smooth transition for hover effect */
-  }
-  
-  /* Style the apply button hover effect */
-  .apply-button:hover {
-    background-color: #0056b3; /* Darken the background color on hover */
-  }
-  
-  /* Style the text overlay */
-  .overlay-text-nonqm {
-    position: absolute;
-    bottom: 10px; /* Adjust this value to move the text vertically */
-    left: 10px; /* Adjust this value to move the text horizontally */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
-  }
-  
+/* Style the container for the NonQM component */
+.nonqm-container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Style the container for the image */
+.nonqm-image-container {
+  width: 100%;
+  height: 67vh; /* Adjust the height as needed */
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative; /* Add position relative to contain absolute overlay */
+}
+
+/* Style the image */
+.nonqm-image {
+  width: 100%;
+  height: 67px;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  object-position: center bottom; /* Center the image horizontally and cut the top portion */
+
+  /* Style the image */
+  object-position: center; /* Center the image horizontally and crop from the top */
+}
+
+/* Style the heading */
+h1 {
+  font-size: 28px; /* Set the font size for the heading */
+  margin: 20px auto; /* Center the heading horizontally */
+}
+
+/* Style the introductory paragraph */
+p {
+  width: 80%;
+  margin: 0 auto 20px;
+  font-size: 18px; /* Set the font size for the introductory paragraph */
+  line-height: 1.6; /* Set the line height */
+  text-align: justify;
+}
+
+/* Style the list of benefits */
+ol {
+  width: 80%;
+  margin: 0 auto 20px;
+  text-align: left; /* Align the list items to the left */
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+/* Style the individual benefits */
+ol li {
+  font-size: 18px; /* Set the font size for list items */
+  line-height: 1.6; /* Set the line height */
+  margin-bottom: 10px; /* Add space below each list item */
+}
+
+/* Style the apply button */
+.apply-button {
+  padding: 10px 20px; /* Add padding to the button */
+  font-size: 18px; /* Set the font size for the button */
+  background-color: #007bff; /* Set the background color for the button */
+  color: white; /* Set the text color for the button */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Add border radius to the button */
+  cursor: pointer; /* Set cursor to pointer for better interactivity */
+  transition: background-color 0.3s; /* Add a smooth transition for hover effect */
+}
+
+/* Style the apply button hover effect */
+.apply-button:hover {
+  background-color: #0056b3; /* Darken the background color on hover */
+}
+
+/* Style the text overlay */
+.overlay-text-nonqm {
+  position: absolute;
+  top: 50%; /* Adjust top position */
+  left: 50%; /* Adjust left position */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.overlayn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
