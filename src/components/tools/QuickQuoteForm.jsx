@@ -136,7 +136,7 @@ const QuickQuoteForm = () => {
           <option value="poor">Poor</option>
         </select>
       </div>
-      <button type="submit">Submit</button>
+      <button className='qqButton' type="submit">Submit</button>
     </form>
   );
 };
