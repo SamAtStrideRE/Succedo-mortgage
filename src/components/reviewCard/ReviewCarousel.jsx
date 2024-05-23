@@ -1,50 +1,50 @@
 // src/components/ReviewCarousel.js
-import React, { useState, useEffect } from 'react';
-import './ReviewCarousel.css';
+import React, { useState, useEffect } from "react";
+import "./ReviewCarousel.css";
 
 const reviews = [
   {
-    name: "Hanna Lisem",
-    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.",
+    name: "Laiju",
+    text: "Succedo is highly trustworthy, knowledgeable, and supportive. They have effectively addressed all of my inquiries and remains readily available to answer any questions.",
     img: "https://via.placeholder.com/150",
     rating: 5,
-    position: "Project Manager"
+
   },
   {
-    name: "Ronne Galle",
-    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.",
+    name: "var saj",
+    text: "They are very helpful throughout the entire process of buying a new home. They went above and beyond for us.",
     img: "https://via.placeholder.com/150",
     rating: 4,
-    position: "Project Manager"
+
   },
   {
-    name: "Missy Limana",
-    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.",
+    name: "Shabina",
+    text: "Transaction Closed! Succedo is transparent and efficient and very detailed with their clients and the team is involved in the transaction",
     img: "https://via.placeholder.com/150",
     rating: 5,
-    position: "Engineer"
+ 
   },
   {
-    name: "John Doe",
-    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.",
+    name: "Ray",
+    text: "My wife and I just closed on our first home recently. Succedo is our first mortgage agency. Succedo is really good at what they do and makes sure that everything is done well and on time",
     img: "https://via.placeholder.com/150",
     rating: 5,
-    position: "Software Engineer"
+
   },
   {
-    name: "Jane Smith",
-    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.",
-    img: "https://via.placeholder.com/150",
-    rating: 4,
-    position: "Marketing Specialist"
-  },
-  {
-    name: "Sam Wilson",
-    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.",
+    name: "Sarin",
+    text: "Succedo is extremely professional and helpful throughout the process. They are very quick to respond to queries..",
     img: "https://via.placeholder.com/150",
     rating: 5,
-    position: "Graphic Designer"
-  }
+   
+  },
+  {
+    name: "Glory",
+    text: "Succedo was resourceful and their team is always available. From the beginning, I was able to trust them in the finance of our home. ",
+    img: "https://via.placeholder.com/150",
+    rating: 5,
+  
+  },
 ];
 
 const ReviewCarousel = () => {
@@ -59,7 +59,10 @@ const ReviewCarousel = () => {
 
   return (
     <div className="carousel">
-      <div className="carousel-inner" style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}>
+      <div
+        className="carousel-inner"
+        style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+      >
         {reviews.map((review, index) => (
           <div className="carousel-item" key={index}>
             <div className="review-card">
