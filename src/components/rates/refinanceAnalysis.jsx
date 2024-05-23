@@ -1,7 +1,7 @@
 import React from 'react';
 import './CurrentRates.css'; 
 
-const CurrentRates = () => {
+const refinanceAnalysis = () => {
   return (
     <div className="currentrates">
       <h1>Coming soon</h1>
@@ -9,4 +9,4 @@ const CurrentRates = () => {
   );
 };
 
-export default CurrentRates;
+export default refinanceAnalysis;

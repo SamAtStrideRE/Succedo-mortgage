@@ -1,5 +1,5 @@
 import React from 'react';
-import './Arm.css'; // Import your CSS file
+import './ARM.css'; // Import your CSS file
 import armImage from "../image/arm.jpg";
 
 const ARM = () => {
