@@ -138,11 +138,11 @@ const Header = () => {
                     Factors Affecting Rates
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink activeClassName="is-active" to="/RateTrends">
                     Rate Trends
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             )}
           </li>

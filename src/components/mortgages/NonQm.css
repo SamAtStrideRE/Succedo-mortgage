@@ -22,11 +22,8 @@ html, body {
 /* Style the image */
 .nonqm-image {
   width: 100%;
-  height: 67px;
+  height: 100%; /* Ensure the image takes the full height of the container */
   object-fit: cover; /* Ensure the image covers the container without distortion */
-  object-position: center bottom; /* Center the image horizontally and cut the top portion */
-
-  /* Style the image */
   object-position: center; /* Center the image horizontally and crop from the top */
 }
 
@@ -61,6 +58,21 @@ ol li {
   margin-bottom: 10px; /* Add space below each list item */
 }
 
+/* Style the types of Non-QM loans list */
+.nonqm-types {
+  width: 80%;
+  margin: 0 auto 20px;
+  text-align: left; /* Align the list items to the left */
+  padding-left: 20px;
+  list-style-type: none; /* Remove default list style */
+}
+
+.nonqm-types li {
+  font-size: 18px; /* Set the font size for list items */
+  line-height: 1.6; /* Set the line height */
+  margin-bottom: 10px; /* Add space below each list item */
+}
+
 /* Style the apply button */
 .apply-button {
   padding: 10px 20px; /* Add padding to the button */
@@ -89,28 +101,12 @@ ol li {
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.overlayn{
+
+.overlayn {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

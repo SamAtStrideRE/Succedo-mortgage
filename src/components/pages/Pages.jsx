@@ -45,7 +45,7 @@ const Pages = () => {
           <Route exact path='/RAC' component={RAC} />
           <Route exact path='/QuickQuoteForm' component={QuickQuoteForm} />
           <Route exact path='/FAR' component={FAR} />
-          <Route exact path='/RateTrends' component={RateTrends} />
+          {/* <Route exact path='/RateTrends' component={RateTrends} /> */}
 
           
 
