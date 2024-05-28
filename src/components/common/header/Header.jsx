@@ -162,9 +162,9 @@ const Header = () => {
             </a>
           </li>
           <li className="menu-item">
-            <a href="tel:18328886368" className="phone-icon">
+            <a href="tel: 8328886368" className="phone-icon">
               <FiPhone />
-              +1 (832) 888-6368
+               (832) 888-6368
             </a>
           </li>
         </ul>

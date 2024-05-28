@@ -48,6 +48,7 @@
 }
 
 .footer-email {
+  text-transform: lowercase;
   color: #fff;
   text-decoration: underline;
 }
