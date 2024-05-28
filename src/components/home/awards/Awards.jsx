@@ -1,30 +1,29 @@
-import React from "react"
-import Heading from "../../common/Heading"
-import { awards } from "../../data/Data"
-import "./awards.css"
+import React from "react";
+import "./awards.css";
 
 const Awards = () => {
   return (
-    <>
-      <section className='awards padding'>
-        <div className='container'>
-          <Heading title='Over 1,24,000+ Happy User Bieng With Us Still They Love Our Services' subtitle='Our Awards' />
-
-          <div className='content grid4 mtop'>
-            {awards.map((val, index) => (
-              <div className='box' key={index}>
-                <div className='icon'>
-                  <span>{val.icon}</span>
-                </div>
-                <h1>{val.num}</h1>
-                <p>{val.name}</p>
-              </div>
-            ))}
-          </div>
+    <section className="awards-section">
+      <div className="awards-container">
+        <div className="awards-blue-container"></div>
+        <div className="awards-image-container">
+          <img src="/images/award.jpg" alt="Happy Family" className="awards-image" />
         </div>
-      </section>
-    </>
-  )
-}
+        <div className="awards-content">
+          <h1>Need Mortgage Loan Help? We've Got You Covered!</h1>
+          <ul>
+            <li>Confusing loan estimate forms? No problem! We'll help you understand them.</li>
+            <li>Struggling to find the best savings and negotiate with lenders? We'll guide you.</li>
+            <li>Burdened by fees and charges? We'll help you avoid them and keep costs low.</li>
+            <li>Been unable to get a loan anywhere? We can work around your situation.</li>
+            <li>Uncertain how to negotiate with the seller and ask for contributions? We can help.</li>
+            <li>Need to find rebates and discounts? We've got the connections to help you save.</li>
+          </ul>
+          <a href="/register" className="awards-apply-now">Apply Now For The Best Deals</a>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Awards
+export default Awards;
