@@ -9,7 +9,7 @@ const ARM = () => {
     <div className="arm-image-container"> {/* Use jumbo-image-container class */}
  <div className="overlayarm"></div> {/* Black gradient overlay */}
    <img src={armImage} alt="va" className="arm-image" /> {/* Use jumbo-image class */}
-   <div className="overlay-text-arm"> ARM Home Loans</div> {/* Text overlay */}
+   <div className="overlay-text-arm"> ARM HOME LOANS</div> {/* Text overlay */}
 
 </div>
 
