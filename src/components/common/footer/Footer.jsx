@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
           <div className="footer-center">
             <p> 626 Westwind Dr.<br />Allen, TX, 75002</p>
-            <p>Office: 8328886368</p>
+            <p>Phone: (832) 8886-368</p>
             <p>Email: <a href="mailto:contact@succedomortgage.com" className="footer-email">contact@succedomortgage.com</a></p>
           </div>
           <div className="footer-right">
