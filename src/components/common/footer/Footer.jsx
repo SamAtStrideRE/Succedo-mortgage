@@ -18,11 +18,11 @@ const Footer = () => {
             <p>Email: <a href="mailto:contact@succedomortgage.com" className="footer-email">contact@succedomortgage.com</a></p>
           </div>
           <div className="footer-right">
-            <div className="footer-icons">
+            {/* <div className="footer-icons">
               <a href="#" className="footer-icon"><FaFacebookF /></a>
               <a href="#" className="footer-icon"><FaTwitter /></a>
               <a href="#" className="footer-icon"><FaLinkedin /></a>
-            </div>
+            </div> */}
             <div className="footer-links">
             <NavLink className="footer-link" to="/Privacy">
               Privacy Policy
