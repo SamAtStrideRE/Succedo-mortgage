@@ -13,15 +13,15 @@ const Footer = () => {
           </div>
           <div className="footer-center">
             <p>6807 Wynnwood Lane Suite B<br />Houston, Texas 77008</p>
-            <p>Office: (346) 476-1900</p>
+            <p>Office: +1 (832) 888-6368</p>
             <p>Email: <a href="mailto:info@cleartoclose.mortgage" className="footer-email">info@cleartoclose.mortgage</a></p>
           </div>
           <div className="footer-right">
-            <div className="footer-icons">
+            {/* <div className="footer-icons">
               <a href="#" className="footer-icon"><FaFacebookF /></a>
               <a href="#" className="footer-icon"><FaTwitter /></a>
               <a href="#" className="footer-icon"><FaLinkedin /></a>
-            </div>
+            </div> */}
             <div className="footer-links">
               <a href="#" className="footer-link">Privacy Policy</a>
               <a href="#" className="footer-link">NMLS Consumer Access</a>
