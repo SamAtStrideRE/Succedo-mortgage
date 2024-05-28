@@ -22,7 +22,7 @@ const FRM = () => {
         <li>Peace of mind knowing your mortgage payments won't fluctuate.</li>
       </ol>
       
-      <button className="apply-button">Apply Now</button>
+      <a href="https://2584954.my1003app.com/2085367/inquiry"><button className="apply-button">Apply Now</button></a>
     </div>
   );
 };

@@ -28,7 +28,7 @@ const VA = () => {
         <li>Choose the offer that best fits your needs.</li>
       </ol>
       
-      <button className="apply-button">Apply Now</button>
+      <a href="https://2584954.my1003app.com/2085367/inquiry"><button className="apply-button">Apply Now</button></a>
     </div>
   );
 };

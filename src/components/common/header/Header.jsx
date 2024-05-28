@@ -153,7 +153,7 @@ const Header = () => {
           </li>
           <li className="menu-item">
             <a
-              href="https://2584954.my1003app.com/2398062/register"
+              href="https://2584954.my1003app.com/2085367/inquiry"
               className="apply-btn"
               target="_blank"
               rel="noopener noreferrer"

@@ -37,7 +37,7 @@ const NonQM = () => {
         <li><strong>ITIN:</strong> For borrowers with Individual Taxpayer Identification Numbers, often used by foreign nationals residing in the U.S.</li>
       </ul>
 
-      <button className="apply-button">Apply Now</button>
+      <a href="https://2584954.my1003app.com/2085367/inquiry"><button className="apply-button">Apply Now</button></a>
     </div>
   );
 };
