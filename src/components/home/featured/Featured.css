@@ -1,5 +1,5 @@
 .featured {
-  padding: 50px 0;
+  padding: 10px 0;
   background-color: #f9f9f9;
 }
 
@@ -51,7 +51,7 @@
   font-size: 16px;
   color: #007bff;
   text-decoration: none;
-  float: right;  /* This aligns the button to the right */
+  float:right;  /* This aligns the button to the right */
 }
 
 .featuredapply-now:hover {
@@ -59,10 +59,18 @@
 }
 
 .featured-icon {
-  width: 40px;  /* Adjust the size as needed */
-  height: 40px;  /* Adjust the size as needed */
+  width: 50px;  /* Adjust the size as needed */
+  height: 50px;  /* Adjust the size as needed */
   display: block;
   margin-bottom: 15px;  /* Space between icon and heading */
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Updated class for image size */
+.featured .feature-image {
+  width: 50px;  /* Adjust the size as needed */
+  height: 50px;  /* Adjust the size as needed */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
 }
