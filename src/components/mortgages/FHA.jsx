@@ -8,7 +8,7 @@ const FHA = () => {
       <div className="fha-image-container"> {/* Use the same class name */}
         <img src={loansImage} alt="Loans" className="fha-image" /> {/* Use the same class name for the image */}
         <div className="overlayh"></div> {/* Use the same class name for the overlay */}
-        <div className="overlay-text-fha">Federal Housing Administration loan</div> {/* Use the same class name for the text overlay */}
+        <div className="overlay-text-fha">FEDERAL HOUSING ADMINISTRATION LOAN</div> {/* Use the same class name for the text overlay */}
       </div>
       <h1 className="fha-heading">Unlock Your Dream Home with Succedo's FHA Home Loans</h1>
       <p className="fha-intro">

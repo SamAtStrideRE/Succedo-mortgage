@@ -9,7 +9,7 @@ const FRM = () => {
       <div className="frm-image-container"> {/* Use jumbo-image-container class */}
       <div className="fmoverlay"></div> {/* Black gradient overlay */}
         <img src={frmImage} alt="Fixed-Rate Mortgage" className="frm-image" /> {/* Use jumbo-image class */}
-        <div className="overlay-text-frm">Fixed Rate Mortgage (FRM)</div> {/* Text overlay */}
+        <div className="overlay-text-frm">FIXED RATE MORTGAGE</div> {/* Text overlay */}
       </div>
       <h1>Find Stability and Security with Succedo's Fixed-Rate Mortgage (FRM)</h1>
       

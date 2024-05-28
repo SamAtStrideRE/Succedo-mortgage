@@ -8,7 +8,7 @@ const NonQM = () => {
       <div className="nonqm-image-container">
         <div className="overlayn"></div>
         <img src={nonqmImage} alt="nonqm" className="nonqm-image" />
-        <div className="overlay-text-nonqm">Non-QM Home Loans</div>
+        <div className="overlay-text-nonqm">NON-QM HOME LOANS</div>
       </div>
       <h1>About Non-QM Home Loans</h1>
       <p>

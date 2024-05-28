@@ -7,7 +7,7 @@ const VA = () => {
          <div className="va-image-container"> {/* Use jumbo-image-container class */}
       <div className="overlayv"></div> {/* Black gradient overlay */}
         <img src={vaImage} alt="va" className="va-image" /> {/* Use jumbo-image class */}
-        <div className="overlay-text-va"> VA Home Loans</div> {/* Text overlay */}
+        <div className="overlay-text-va"> VA HOME LOANS</div> {/* Text overlay */}
       </div>
       <h1>About VA Home Loans</h1>
       <p>

@@ -7,7 +7,7 @@ const Jumbo = () => {
       <div className="jumbo-image-container"> {/* Use the same class name */}
     <img src={loansImage} alt="Loans" className="jumbo-image" /> {/* Use the same class name for the image */}
     <div className="overlayj"></div> {/* Use the same class name for the overlay */}
-    <div className="overlay-text-jumbo">Jumbo Home Loans</div> {/* Use the same class name for the text overlay */}
+    <div className="overlay-text-jumbo">JUMBO HOME LOANS</div> {/* Use the same class name for the text overlay */}
   </div>
       <h1>About Jumbo Home Loans</h1>
       <p>
