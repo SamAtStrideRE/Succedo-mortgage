@@ -1,0 +1,27 @@
+/* Back.css */
+.back {
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+  }
+  .back-content {
+    
+    padding: 20px;
+    display: inline-block;
+  }
+  .back-content h1{
+    color: white;
+    padding: 50px;
+    display: inline-block;
+  }
+  /* .back-content h2{
+    color: white;
+    padding: 20px;
+  } */
+
+
+  

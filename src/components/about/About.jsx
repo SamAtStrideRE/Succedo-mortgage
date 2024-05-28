@@ -9,8 +9,7 @@ const About = () => {
       <section className="about">
         <Back
           name="About Us"
-          title="About Us - Who We Are?"
-          subtitle="Succedo Mortgages"
+          // title="About Us - Who We Are?"
           cover={img}
         />
         <div className="welcome-container">
