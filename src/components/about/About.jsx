@@ -8,10 +8,11 @@ const About = () => {
     <>
       <section className="about">
         <Back
-          name="About Us"
+          name="ABOUT US"
           // title="About Us - Who We Are?"
           cover={img}
         />
+         <div className="aboutoverlay"></div> {/* Black gradient overlay */}
         <div className="welcome-container">
           <h2>Welcome To Succedo</h2>
           <div className="content-container">
@@ -35,7 +36,7 @@ const About = () => {
               our clients. Whether you are a first-time homebuyer or a seasoned
               homeowner looking to refinance, our team is here to assist you
               every step of the way. Contact us today to begin your journey
-              towards homeownership with a trusted partner by your side.
+              towards homeownership with a trusted partner by your side.
             </p>
           </div>
         </div>

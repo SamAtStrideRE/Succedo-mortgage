@@ -12,23 +12,30 @@ const Footer = () => {
             <p>Proudly Serving all of Texas</p>
           </div>
           <div className="footer-center">
-            <p>6807 Wynnwood Lane Suite B<br />Houston, Texas 77008</p>
-            <p>Office: +1 (832) 888-6368</p>
-            <p>Email: <a href="mailto:info@cleartoclose.mortgage" className="footer-email">info@cleartoclose.mortgage</a></p>
+            <p> 626 westwind dr<br />allen tx 75002</p>
+            <p>Office: +18328886368</p>
+            <p>Email: <a href="mailto:contact@succedomortgage.com" className="footer-email">contact@succedomortgage.com</a></p>
           </div>
           <div className="footer-right">
-            {/* <div className="footer-icons">
+            <div className="footer-icons">
               <a href="#" className="footer-icon"><FaFacebookF /></a>
               <a href="#" className="footer-icon"><FaTwitter /></a>
               <a href="#" className="footer-icon"><FaLinkedin /></a>
-            </div> */}
+            </div>
             <div className="footer-links">
               <a href="#" className="footer-link">Privacy Policy</a>
               <a href="#" className="footer-link">NMLS Consumer Access</a>
             </div>
           </div>
         </div>
-        
+        <div class="footer-content">
+  <div class="footer-nmsimage">
+    <img src="./images/NMLS.png" alt="nms" class="footer-nms" />
+  </div>
+  <div class="footer-ehoimage">
+    <img src="./images/eho.png" alt="eho" class="footer-eho" />
+  </div>
+</div>
 
         <div className="footer-bottom">
           <p>
