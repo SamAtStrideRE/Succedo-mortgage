@@ -18,6 +18,7 @@ import Refinance from "../tools/Refinance"
 import QuickQuoteForm from "../tools/QuickQuoteForm"
 import RAC from "../rates/RAC"
 import PaperworksModal from "../tools/PaperworksModal"
+import Privacy from "../privacy/Privacy"
 
 const Pages = () => {
   return (
@@ -46,6 +47,7 @@ const Pages = () => {
           <Route exact path='/FAR' component={FAR} />
           
 
+          <Route exact path='/Privacy' component={Privacy} />
           
 
          
