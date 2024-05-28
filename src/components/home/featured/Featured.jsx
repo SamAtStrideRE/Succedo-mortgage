@@ -1,28 +1,33 @@
 import React from "react";
 import Heading from "../../common/Heading";
 import "./Featured.css";
-import FeaturedCard from "./FeaturedCard";
 
 const Featured = () => {
   return (
     <>
-      <section className="featured background">
+          <section className="featured background">
         <Heading
           className="welcome"
-          title="New Here?"
-          subtitle="Welcome to Succedo Mortgage, where homeownership happens in a snap.
-
-Are you tired of hidden fees and indefinite waiting? Succedo Mortgage provides the best insurance at the most affordable costs, with no hidden fees. With us, the savings never end, earning you points for your future.
-
-Why settle for less when Succedo Mortgage offers flexibility and value? Join us today to begin your road towards homeownership!"
+          title="Flexible Home Financing Options For Every Buyer"
+          subtitle="At Succedo, we simplify the home buying process with clear terms and flexible, affordable mortgage rates. Our mission is not just to help you find a house but to make a valuable investment in a place you can call home."
         />
         <br />
         <br />
-        <div className="container">
-          <Heading
-            title="Cheaper, Faster, Easier is the Better way"
-          />
-          <FeaturedCard />
+        <div className="featuredcontainer">
+          <div className="featuredcard">
+            <h3>Home Purchase</h3>
+            <p>
+              When you are <span style={{ color: "red" }}>buying a property</span>, you’re in it for the long haul. We know this is the biggest financial investment of your life. Let us help you make it easier with personalized care, and financial advice from home financing experts.
+            </p>
+            <a href="CalcApp" className="featuredapply-now">Apply Now →</a>
+          </div>
+          <div className="featuredcard">
+            <h3>Home Refinancing</h3>
+            <p>
+              <span style={{ color: "red" }}>Mortgage refinancing</span> can be an effective way to lower your monthly payments, reduce the term of your loan, or cash out equity to pay for expenses like home improvements or college tuition.
+            </p>
+            <a href="/Refinance" className="featuredapply-now">Apply Now →</a>
+          </div>
         </div>
       </section>
     </>
