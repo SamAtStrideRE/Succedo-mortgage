@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { NavLink} from "react-router-dom";
+// import { FaFacebookF, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import './footer.css';
 
 const Footer = () => {
@@ -23,8 +24,10 @@ const Footer = () => {
               <a href="#" className="footer-icon"><FaLinkedin /></a>
             </div>
             <div className="footer-links">
-              <a href="#" className="footer-link">Privacy Policy</a>
-              <a href="#" className="footer-link">NMLS Consumer Access</a>
+            <NavLink className="footer-link" to="/Privacy">
+              Privacy Policy
+            </NavLink>
+              <a href="https://mortgage.nationwidelicensingsystem.org/SitePages/default.aspx" className="footer-link">NMLS Consumer Access</a>
             </div>
           </div>
         </div>
