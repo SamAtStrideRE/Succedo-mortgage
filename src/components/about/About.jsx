@@ -8,12 +8,14 @@ const About = () => {
     <>
       <section className="about">
         <Back
-          name="ABOUT US"
+         
           // title="About Us - Who We Are?"
           cover={img}
+          
         />
          <div className="aboutoverlay"></div> {/* Black gradient overlay */}
         <div className="welcome-container">
+        <div className="overlay-text-about"> ABOUT US</div> {/* Text overlay */}
           <h2>Welcome To Succedo</h2>
           <div className="content-container">
             <p>
