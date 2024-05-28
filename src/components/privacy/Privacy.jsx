@@ -7,10 +7,10 @@ const Privacy = () => {
       <h1 className="privacy-title">Privacy Policy</h1>
       <div className="privacy-content">
         <p>
-          This Privacy Policy governs the manner in which Succedo Mortgage, LLC
+          This Privacy Policy governs the manner in which Succedo Mortgage,
           collects, uses, maintains, and discloses information collected from
           users (each, a “User”) of the
-          <a href="https://cleartoclose.mortgage/">Succedo Mortgage website</a>
+          <a href="https://succedo-mortgage.vercel.app/">Succedo Mortgage website</a>
           (the "Site"). This privacy policy applies to the Site and all products
           and services offered by Succedo Mortgage, LLC.
         </p>
