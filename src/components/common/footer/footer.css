@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .footer-left,
@@ -96,19 +97,36 @@
   font-size: 14px;
 }
 
+/* Centered Images Section */
+.footer-images {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.footer-image-container {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-image {
+  width: 60px;
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Responsive Design */
 @media (min-width: 768px) {
   .footer-content {
     flex-direction: row;
     text-align: left;
   }
-  
+
   .footer-left,
   .footer-center,
   .footer-right {
     align-items: flex-start;
   }
-  
+
   .footer-left {
     text-align: left;
   }
@@ -127,34 +145,4 @@
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-nmsimage,
-.footer-ehoimage {
-  flex: 1;
-}
-
-.footer-nms {
-  width: 100px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 5px; /* Adjust vertical margin as needed */
-}
-
-.footer-eho {
-  width: 80px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 5px; /* Adjust vertical margin as needed */
-}
-.footer-nmsimage{
-  margin-left:450px;
-}
-.footer-ehoimage{
-  margin-right:280px;
 }
