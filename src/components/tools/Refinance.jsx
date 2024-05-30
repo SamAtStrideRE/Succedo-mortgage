@@ -52,7 +52,7 @@ const Refinance = () => {
           </div>
         </div>
         <div className="refinance-buttons">
-          <a href="/apply" className="refinance-button">Apply Now</a>
+        <a href="https://2584954.my1003app.com/2085367/inquiry"><button className="apply-button">Apply Now</button></a>
           <button onClick={openModal} className="refinance-button">See Paperworks Needed</button>
         </div>
         <PaperworksModal showModal={showModal} closeModal={closeModal} />
