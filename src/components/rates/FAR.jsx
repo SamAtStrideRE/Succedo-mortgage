@@ -1,4 +1,3 @@
-// FAR.jsx
 import React from 'react';
 import './FAR.css';
 
@@ -32,7 +31,6 @@ const FAR = () => {
   ];
 
   return (
-    
     <div className="far-container">
       <h1 className="far-title">Factors Affecting Rates</h1>
       <div className="far-content">

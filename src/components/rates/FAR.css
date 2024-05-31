@@ -1,4 +1,3 @@
-/* src/styles/FAR.css */
 .far-container {
   max-width: 1200px;
   margin: 50px auto;
@@ -29,7 +28,6 @@
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   animation: slideInUp 0.5s ease-in-out;
 }
 
@@ -63,7 +61,6 @@
   margin-bottom: 10px;
 }
 
-
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -80,4 +77,32 @@
   to { transform: translateY(0); opacity: 1; }
 }
 
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .far-content {
+    gap: 20px;
+  }
 
+  .far-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .far-item.left,
+  .far-item.right {
+    flex-direction: column;
+  }
+
+  .far-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .far-text h2 {
+    font-size: 1.3em;
+  }
+
+  .far-text p {
+    font-size: 1em;
+  }
+}

@@ -83,3 +83,22 @@
     font-weight: bold; /* Font weight */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
   }
+/* For smaller screens, adjust form width and margin */
+@media only screen and (max-width: 600px) {
+  .quick-quote-form {
+    width: 90%; /* Adjust width to fit smaller screens */
+    margin: 30px auto; /* Adjust margin for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .overlay-text-quick-quote {
+    top: 150px; /* Adjust top position for smaller screens */
+    left: 50px; /* Adjust left position for smaller screens */
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+  
+  .quick-quote-image,
+  .overlayquick-quote {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+}
