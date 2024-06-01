@@ -24,7 +24,7 @@ const Refinance = () => {
             Another way to convert equity in your home to cash is a "home equity" loan. A "home equity" loan is an alternative to refinancing if your home loan has a very low rate compared to current interest rates or if you have a prepayment penalty on your loan.
           </p>
         </div>
-        <div className="text">
+        <div className="textb">
           <h2>Benefits:</h2>
           <ul>
             <li>Reduce Your Interest Rate</li>
@@ -33,7 +33,7 @@ const Refinance = () => {
             <li>Lower Monthly Payments</li>
           </ul>
         </div>
-        <div className="text">
+        <div className="textb">
           <h2>To Refinance You'll Need:</h2>
           <ul>
             <li>Current Appraisal and Analysis</li>

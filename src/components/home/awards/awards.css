@@ -1,3 +1,4 @@
+/* Existing styles */
 .awards-section {
   padding: 50px 0;
   background-color: #f9f9f9;
@@ -8,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  max-width: 1400px; /* Increased the width from 1200px to 1400px */
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
   background-color: white;
@@ -22,7 +23,7 @@
   max-width: 500px;
   border-radius: 8px;
   height: 100%;
-  z-index: 1; /* Ensure the image is above the blue container */
+  z-index: 1;
 }
 
 .awards-content {
@@ -68,9 +69,69 @@
   background-color: red;
   border-radius: 5px;
   text-decoration: none;
-  margin-left: 200px; /* Move to the right end */
+  margin-left: 200px;
 }
 
 .awards-apply-now:hover {
   background-color: darkred;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .awards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .awards-content {
+    padding: 10px;
+    text-align: center; /* Center align the text in awards content */
+  }
+
+  .awards-content h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .awards-content ul li {
+    font-size: 14px;
+    padding-left: 25px;
+    text-align: left; /* Ensure list items are left-aligned */
+  }
+
+  .awards-content ul li::before {
+    padding-left: 5px;
+  }
+
+  .awards-apply-now {
+    margin-left: auto; /* Align the button to the right */
+    margin-right: auto; /* Align the button to the left */
+    margin-top: 20px;
+    text-align: center;
+    align-self: center; /* Center the button in its container */
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-content h1 {
+    font-size: 18px;
+  }
+
+  .awards-content ul li {
+    font-size: 12px;
+    padding-left: 30px; /* Further adjust padding for small screens */
+    text-align: left; /* Ensure list items are left-aligned */
+  }
+
+  .awards-content ul li::before {
+    padding-left: 10px; /* Further adjust checkmark position */
+  }
+
+  .awards-apply-now {
+    font-size: 14px;
+    margin: 20px auto 0 auto; /* Center the button */
+    display: block; /* Ensure it's treated as a block-level element */
+    text-align: center;
+    align-self: center; /* Center the button in its container */
+  }
 }
