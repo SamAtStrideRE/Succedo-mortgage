@@ -79,7 +79,7 @@ p {
 
 /* Adjust margin for paragraph based on screen size */
 @media (max-width: 768px) {
-  .fha-container p {
-    margin-left: 80px; /* Adjust margin for smaller screens */
+  .fha-heading ,.fha-benefit{
+    margin-left: 25px; /* Adjust margin for smaller screens */
   }
 }
