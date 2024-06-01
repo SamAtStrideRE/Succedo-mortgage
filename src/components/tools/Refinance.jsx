@@ -14,7 +14,7 @@ const Refinance = () => {
       {" "}
       {/* Use container class */}
       <div className="overlayrefinance"></div> {/* Black gradient overlay */}
-      <img src={refinanceImage} alt="va" className="refinance-image" />{" "}
+      <img src={refinanceImage} alt="re" className="refinance-image" />{" "}
       {/* Use image class */}
       <div className="overlay-text-refinance"> Refinancing Your Home</div>{" "}
       {/* Text overlay */}

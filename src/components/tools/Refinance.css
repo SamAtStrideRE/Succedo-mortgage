@@ -124,7 +124,9 @@
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
+  z-index: 2; /* Ensure the text overlay is above the black overlay */
 }
+
 
 .overlayrefinance {
   position: absolute;
@@ -162,6 +164,10 @@
       list-style-position: inside; /* Adjust list style for centering */
   }
 
+  .refinance-container ul li {
+      font-size: 1em; /* Adjust the font size for mobile view */
+  }
+
   .refinance-buttons {
       flex-direction: column;
       align-items: center;
@@ -191,14 +197,16 @@
       height: auto;
   }
 
-  .overlayrefinance {
-      height: auto;
-  }
+    .overlayrefinance {
+      height: 64%;
+    }
+  
 
   .overlay-text-refinance {
       font-size: 24px;
   }
 }
+
 .textb
 {
 margin-left: 90px;

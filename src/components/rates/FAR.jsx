@@ -1,7 +1,7 @@
 import React from 'react';
 import './FAR.css';
-
-const FAR = () => {
+import factorImage from "../image/factors.jpg"; // Import the image
+const CombinedComponent = () => {
   const points = [
     {
       title: "Credit Score",
@@ -31,21 +31,28 @@ const FAR = () => {
   ];
 
   return (
-    <div className="far-container">
-      <h1 className="far-title">Factors Affecting Rates</h1>
-      <div className="far-content">
-        {points.map((point, index) => (
-          <div className={`far-item ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
-            <img src={point.imgSrc} alt={point.title} className="far-image"/>
-            <div className="far-text">
-              <h2>{point.title}</h2>
-              <p>{point.content}</p>
+    <div>
+      <div className="factor-image-container"> {/* Use jumbo-image-container class */}
+        <div className="overlayfactor"></div> {/* Black gradient overlay */}
+        <img src={factorImage} alt="factor" className="factor-image" /> {/* Use jumbo-image class */}
+        <div className="overlay-text-factor">Factors Affecting Rates</div> {/* Text overlay */}
+      </div>
+      <div className="far-container">
+        
+        <div className="far-content">
+          {points.map((point, index) => (
+            <div className={`far-item ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
+              <img src={point.imgSrc} alt={point.title} className="far-image"/>
+              <div className="far-text">
+                <h2>{point.title}</h2>
+                <p>{point.content}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default FAR;
+export default CombinedComponent;
