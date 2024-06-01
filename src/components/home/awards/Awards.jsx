@@ -12,7 +12,7 @@ const Awards = () => {
         <div className="awards-content">
           <h1>Need Mortgage Loan Help? We've Got You Covered!</h1>
           <ul>
-            <li>Confusing loan estimate forms? No problem! We'll help you understand them.</li>
+            <li>Confusing loan estimate forms? No problem! We'll help you Understand them.</li>
             <li>Struggling to find the best savings and negotiate with lenders? We'll guide you.</li>
             <li>Burdened by fees and charges? We'll help you avoid them and keep costs low.</li>
             <li>Been unable to get a loan anywhere? We can work around your situation.</li>
