@@ -52,6 +52,7 @@ ol li {
   font-size: 18px; /* Set font size for list items */
   line-height: 1.6; /* Improve readability with line-height */
   margin-bottom: 10px; /* Add margin below each list item */
+  padding-left: auto;
 }
 
 button.apply-button {
@@ -70,15 +71,19 @@ button.apply-button {
 button.apply-button:hover {
   background-color: #0056b3; /* Darker blue color on hover */
 }
-.overlay-text-va{
+.overlay-text-va {
   position: absolute; /* Position the text absolutely */
-  top: 200px; /* Adjust top position */
-  right: 600px; /* Adjust right position */
+  top: 35%; /* Adjust top position to the center */
+  left: 50%; /* Adjust left position to the center */
+  transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
   color: white; /* Text color */
   font-size: 36px; /* Font size */
   font-weight: bold; /* Font weight */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+  text-align: center; /* Center the text horizontally */
+  width: 80%; /* Limit width to 80% of the parent container */
 }
+
 .overlayv{
   position: absolute;
   top: 0;

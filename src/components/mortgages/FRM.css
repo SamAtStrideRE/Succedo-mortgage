@@ -82,15 +82,17 @@ html, body {
 
 /* Style the text overlay */
 
-.overlay-text-frm{
+.overlay-text-frm {
   position: absolute; /* Position the text absolutely */
-  top: 200px; /* Adjust top position */
-  right: 500px; /* Adjust right position */
+  top: 50%; /* Adjust top position */
+  right: 50%; /* Adjust right position */
+  transform: translate(50%, -50%); /* Center the text horizontally and vertically */
   color: white; /* Text color */
   font-size: 36px; /* Font size */
   font-weight: bold; /* Font weight */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
 }
+
 .fmoverlay {
   position: absolute;
   top: 0;

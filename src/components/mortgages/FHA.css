@@ -21,8 +21,6 @@ html, body {
   margin-bottom: 20px; /* Add margin below the image */
 }
 
-
-
 .overlay {
   position: absolute;
   top: 0;
@@ -53,7 +51,7 @@ html, body {
 }
 
 /* Style the black gradient overlay */
-.overlayh{
+.overlayh {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,7 +59,6 @@ html, body {
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
-
 
 /* Style the text overlay */
 .overlay-text-fha {
@@ -75,4 +72,14 @@ html, body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Additional styles for other elements in the FHA component can be added here */
+/* Style paragraphs to be justified */
+p {
+  text-align: justify;
+}
+
+/* Adjust margin for paragraph based on screen size */
+@media (max-width: 768px) {
+  .fha-container p {
+    margin-left: 80px; /* Adjust margin for smaller screens */
+  }
+}
