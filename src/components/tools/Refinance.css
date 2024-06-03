@@ -152,14 +152,13 @@
   }
 
   .overlayrefinance {
-    height: 30%;
+    height: 64%;
   }
 
   .overlay-text-refinance {
     font-size: 24px;
-   
-      position: absolute;
-      top: 50%; /* Center vertically */
+    position: absolute;
+      top: 30%; /* Center vertically */
       left: 50%; /* Center horizontally */
       transform: translate(-50%, -50%); /* Center the text */
       color: white;
