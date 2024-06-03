@@ -4,8 +4,7 @@ html, body {
   padding: 0;
 }
 
-/* Style the container for the FRM component */
-
+/* Base styles for headings and text */
 h1, h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
@@ -52,30 +51,24 @@ button.apply-button {
 
 button.apply-button:hover {
   background-color: #0056b3;
-
 }
 
-/* Set margin and padding to 0 for the whole page */
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Style the container for the FRM component */
+/* Base styles for the Jumbo component */
 .jumbo-container {
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
-/* Style the container for the image */
+/* Base styles for the image container */
 .jumbo-image-container {
   width: 100%;
   height: 65vh; /* Adjust the height as needed */
   overflow: hidden;
   margin-bottom: 20px;
+  position: relative; /* Ensure position relative for overlay */
 }
 
-/* Style the image */
+/* Base styles for the image */
 .jumbo-image {
   width: 100%;
   height: 100%;
@@ -83,20 +76,20 @@ html, body {
   object-position: center; /* Center the image within its container */
 }
 
-/* Style the black gradient overlay */
-.overlayj{
+/* Base styles for the black gradient overlay */
+.overlayj {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height:65%;
+  height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-/* Style the text overlay */
+/* Base styles for the text overlay */
 .overlay-text-jumbo {
   position: absolute;
-  top: 30%; /* Adjust top position */
+  top: 50%; /* Adjust top position */
   left: 50%; /* Adjust left position */
   transform: translate(-50%, -50%);
   color: white;
@@ -105,4 +98,43 @@ html, body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Additional styles for other elements in the FRM component can be added here */
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  /* Adjust the overlay text for mobile */
+  .overlay-text-jumbo {
+    font-size: 23px; /* Smaller font size for mobile */
+    top: 60%; /* Adjust top position for better visibility */
+  }
+
+  /* Adjust heading and paragraph text for mobile */
+  h1, h2 {
+    font-size: 24px; /* Smaller font size for mobile */
+    text-align: center;
+    margin: 10px auto; /* Adjust margin for mobile */
+  }
+
+  p, ol {
+    width: 90%; /* Increase width for mobile */
+    font-size: 16px; /* Smaller font size for mobile */
+    margin: 10px auto; /* Adjust margin for mobile */
+  }
+
+  ol {
+    padding-left: 15px; /* Decrease padding for mobile */
+  }
+
+  ol li {
+    font-size: 16px; /* Smaller font size for mobile */
+    margin-bottom: 5px; /* Adjust margin for mobile */
+  }
+
+  button.apply-button {
+    padding: 10px 20px; /* Adjust padding for mobile */
+    font-size: 16px; /* Smaller font size for mobile */
+    margin: 10px auto; /* Adjust margin for mobile */
+  }
+
+  .jumbo-container {
+    padding: 10px; /* Adjust padding for mobile */
+  }
+}

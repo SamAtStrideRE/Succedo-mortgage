@@ -80,6 +80,10 @@ p {
 /* Adjust margin for paragraph based on screen size */
 @media (max-width: 768px) {
   .fha-heading ,.fha-benefit{
-    margin-left: 25px; /* Adjust margin for smaller screens */
+    margin-left: 19px; /* Adjust margin for smaller screens */
+  }
+  .overlay-text-fha {
+    font-size: 26px;
+
   }
 }
