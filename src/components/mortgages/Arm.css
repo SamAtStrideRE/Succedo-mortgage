@@ -1,12 +1,5 @@
-/* Set margin and padding to 0 for the whole page */
-/* html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
-} */
-
-.arm-image-container{
+/* Base styles for the ARM component */
+.arm-image-container {
   width: 100%;
   height: 67vh; /* Adjust the height as needed */
   overflow: hidden;
@@ -14,15 +7,15 @@
   position: relative; /* Add position relative to contain absolute overlay */
 }
 
-/* Style the image */
-.arm-image{
+.arm-image {
   width: 100%;
-  height: 100vh; /* Set the height to half of the viewport height */
+  height: 100vh; /* Set the height to the viewport height */
   object-fit: cover; /* Ensure the image covers the container without distortion */
-  object-position: center bottom; /* Position the image to show the top half */
+  object-position: center bottom; /* Position the image to show the bottom half */
   margin-bottom: 20px;
 }
-.overlay-text-arm{
+
+.overlay-text-arm {
   position: absolute;
   top: 50%; /* Adjust top position */
   left: 50%; /* Adjust left position */
@@ -33,11 +26,49 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.overlayarm{
+.overlayarm {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.arm-content {
+  padding: 20px;
+}
+
+.arm-title {
+  margin-bottom: 20px;
+}
+
+/* Specific styles for titles */
+.main-title {
+  font-size: 28px;
+}
+
+.sub-title {
+  font-size: 24px;
+}
+
+/* Styles for mobile view */
+@media screen and (max-width: 768px) {
+  .overlay-text-arm {
+    font-size: 28px; /* Adjust font size for mobile view */
+  }
+
+  .arm-title {
+    text-align: center; /* Center-align text for mobile view */
+    
+  }
+
+  .main-title {
+
+    margin-left: 15px;
+  }
+
+  .sub-title {
+    font-size: 18px; /* Adjust font size for mobile view */
+  }
 }
