@@ -19,6 +19,7 @@ import QuickQuoteForm from "../tools/QuickQuoteForm"
 import RAC from "../rates/RAC"
 import PaperworksModal from "../tools/PaperworksModal"
 import Privacy from "../privacy/Privacy"
+import MortgageCalculator from "../MortgageCalculator"
 
 const Pages = () => {
   return (
@@ -39,7 +40,8 @@ const Pages = () => {
 
 
           
-          <Route exact path='/CalcApp' component={CalcApp} />
+          {/* <Route exact path='/CalcApp' component={CalcApp} /> */}
+          <Route exact path='/MortgageCalculator' component={MortgageCalculator} />
           <Route exact path='/Refinance' component={Refinance} />
           <Route exact path='/PaperworksModal' component={PaperworksModal} />
           <Route exact path='/RAC' component={RAC} />

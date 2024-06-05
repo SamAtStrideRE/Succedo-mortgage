@@ -71,7 +71,7 @@ const Header = () => {
             {isMenuSubMenu1 && (
               <ul className="sub__menus">
                 <li>
-                  <NavLink activeClassName="is-active" to="/CalcApp">
+                  <NavLink activeClassName="is-active" to="/MortgageCalculator">
                     Mortgage Calculator
                   </NavLink>
                 </li>
