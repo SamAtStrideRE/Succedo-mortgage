@@ -18,43 +18,45 @@
   color: #666;
 }
 
-.featuredcontainer {
+.featured-container {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
-.featuredcard {
+.featured-card {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 45%;
   text-align: left;
+  margin-bottom: 20px; /* Add margin to handle space between cards when stacked */
 }
 
-.featuredcard h3 {
+.featured-card h3 {
   font-size: 20px;
   color: #333;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.featuredcard p {
+.featured-card p {
   font-size: 16px;
   color: #666;
 }
 
-.featuredapply-now {
+.featured-apply-now {
   display: inline-block;
   margin-top: 20px;
   font-size: 16px;
   color: #007bff;
   text-decoration: none;
-  float:right;  /* This aligns the button to the right */
+  float: right; /* This aligns the button to the right */
 }
 
-.featuredapply-now:hover {
+.featured-apply-now:hover {
   text-decoration: underline;
 }
 
@@ -73,4 +75,16 @@
   height: 50px;  /* Adjust the size as needed */
   display: block;
   margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .featured-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-card {
+    width: 90%; /* Full width on mobile with some padding */
+  }
 }
