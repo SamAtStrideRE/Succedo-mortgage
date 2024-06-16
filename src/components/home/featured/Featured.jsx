@@ -3,17 +3,15 @@ import Heading from "../../common/Heading";
 import "./Featured.css";
 
 const Featured = () => {
+ 
+  
+  
   return (
-    <section className="featured background">
-      <Heading
-        className="welcome"
-        title="Flexible Home Financing Options For Every Buyer"
-        subtitle="At Succedo, we simplify the home buying process with clear terms and flexible, affordable mortgage rates. Our mission is not just to help you find a house but to make a valuable investment in a place you can call home."
-      />
-      <br />
-      <br />
+    <section className="featured">
+        <br></br> 
       <div className="featured-container">
         <div className="featured-card">
+          
           <img
             src="/images/featuredpurchase.png"
             alt="Happy Family"
