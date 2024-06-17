@@ -3,19 +3,20 @@ import Heading from "../../common/Heading";
 import "./hero.css";
 
 const Hero = () => {
-  const [showYellowContainer, setShowYellowContainer] = useState(false);
+  const [showblueContainer, setShowblueContainer] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-      // Adjust this value to determine when to show/hide .yellow-container
-      const scrollThreshold = 100; // Example threshold, adjust as needed
+      // Adjust this value to determine when to show/hide .blue-container
+      const scrollThreshold = 100; // Example threshold, adjust as neededblue
 
-      if (scrollPosition > scrollThreshold && !showYellowContainer) {
-        setShowYellowContainer(true);
-      } else if (scrollPosition <= scrollThreshold && showYellowContainer) {
-        setShowYellowContainer(false);
+
+      if (scrollPosition > scrollThreshold && !showblueContainer) {
+        setShowblueContainer(true);
+      } else if (scrollPosition <= scrollThreshold && showblueContainer) {
+        setShowblueContainer(false);
       }
     };
 
@@ -24,7 +25,7 @@ const Hero = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [showYellowContainer]);
+  }, [showblueContainer]);
 
   return (
     <section className="hero">
@@ -41,7 +42,7 @@ const Hero = () => {
             </a>
             <button className="btn">Request a Call</button>
           </div>
-          <div className={`moving-yellow-container ${showYellowContainer ? 'show' : ''}`}>
+          <div className={`moving-blue-container ${showblueContainer ? 'show' : ''}`}>
             <div className="hero-text">
               <h1>Flexible Home Financing Options For Every Buyer</h1>
               <p>

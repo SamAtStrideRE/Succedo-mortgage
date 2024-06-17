@@ -44,7 +44,7 @@
   margin: 0 auto; /* Center align the container */
 }
 
-.moving-yellow-container {
+.moving-blue-container {
   background-color: rgb(0, 88, 146);
   padding-bottom: 80px;
   padding-top: 80px;
@@ -53,14 +53,16 @@
   overflow: hidden; /* Hide the bottom part of the container */
   margin-bottom: 100px; /* Optional: adjust margin as needed */
   transform: translateY(100%); /* Initial position shifted down */
-  margin-top: 200px; /* Adjust margin-top as needed */
+  margin-top: 100px; /* Adjust margin-top as needed */
   transition: transform 0.9s ease, opacity 0.9s ease; /* Add transition for smooth movement */
   width: 100%; /* Adjust width to fit content or use width: 100vw; for full viewport width */
   height: 100%; /* Example height adjustment */
+
+
 }
 
 
-.moving-yellow-container.show {
+.moving-blue-container.show {
   transform: translateY(50%); /* Move up to original position */
   opacity: 1; /* Show element */
 }
