@@ -10,8 +10,6 @@
   height: 138vh; /* Adjusted height to cover full viewport height */
   width: 100%;
   position: relative;
-
-  
 }
 
 .buttons {
@@ -57,10 +55,7 @@
   transition: transform 0.9s ease, opacity 0.9s ease; /* Add transition for smooth movement */
   width: 100%; /* Adjust width to fit content or use width: 100vw; for full viewport width */
   height: 100%; /* Example height adjustment */
-
-
 }
-
 
 .moving-blue-container.show {
   transform: translateY(50%); /* Move up to original position */
@@ -116,6 +111,7 @@ form h4 {
   font-weight: 500;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 800px) {
   .hero .container {
     padding-top: 30%;
@@ -129,5 +125,21 @@ form h4 {
   }
   form input {
     width: 100%;
+  }
+  .moving-blue-container {
+    padding-bottom: 40px; /* Adjust padding for smaller screens */
+    padding-top: 40px;
+    margin-top: 50px; /* Adjust margin-top for smaller screens */
+    border-top-left-radius: 50%; /* Adjust border-radius for smaller screens */
+    border-top-right-radius: 50%;
+    transform: translateY(50%); /* Move up less for smaller screens */
+  }
+  .moving-blue-container.show {
+    transform: translateY(25%); /* Move up to a smaller extent on show */
+  }
+  .moving-blue-container h1 {
+    font-size: 24px; /* Adjust font size for small screens */
+    text-align: center; /* Center align the text */
+    padding: 0 10px; /* Add padding for spacing */
   }
 }
