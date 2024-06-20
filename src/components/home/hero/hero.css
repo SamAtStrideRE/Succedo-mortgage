@@ -138,8 +138,15 @@ form h4 {
     transform: translateY(25%); /* Move up to a smaller extent on show */
   }
   .moving-blue-container h1 {
-    font-size: 24px; /* Adjust font size for small screens */
+    font-size: 20px; /* Adjust font size for small screens */
     text-align: center; /* Center align the text */
     padding: 0 10px; /* Add padding for spacing */
+  }
+  .hero-text {
+    padding: 30px 10px; /* Adjust padding for smaller screens */
+  }
+  .hero h1 {
+    font-size: 30px; /* Adjust font size for small screens */
+    padding-top: 10px; /* Adjust padding for smaller screens */
   }
 }
