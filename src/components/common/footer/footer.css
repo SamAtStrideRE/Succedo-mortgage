@@ -114,6 +114,7 @@
   height: auto; /* Maintain aspect ratio */
 }
 
+
 /* Responsive Design */
 @media (min-width: 768px) {
   .footer-content {
