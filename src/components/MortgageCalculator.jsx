@@ -34,33 +34,50 @@ const MortgageCalculator = () => {
     ],
   };
 
+  const handleSliderChange = (setter) => (event, newValue) => {
+    setter(newValue >= 0 ? newValue : 0);
+  };
+
+  const handleInputChange = (setter) => (event) => {
+    const value = Number(event.target.value);
+    setter(value >= 0 ? value : 0);
+  };
+
   return (
     <div className="mortgage-calculator">
       <h1>Monthly Payment Mortgage Calculator</h1>
       <h4 className="subtitle1">Use this calculator to see monthly payments for different loan amounts.</h4>
       <div className="calculator-container">
         <div className="input-section">
+          <Typography gutterBottom>Home Price</Typography>
+          <Slider
+            value={homePrice}
+            onChange={handleSliderChange(setHomePrice)}
+            aria-labelledby="home-price-slider"
+            max={1000000} // Maximum home price set to 1,000,000 for example
+          />
           <TextField
             label="Home price"
             type="number"
             value={homePrice}
-            onChange={(e) => setHomePrice(Number(e.target.value))}
+            onChange={handleInputChange(setHomePrice)}
             fullWidth
             margin="normal"
+          />
+          <Typography gutterBottom>Down Payment</Typography>
+          <Slider
+            value={downPayment}
+            onChange={handleSliderChange(setDownPayment)}
+            max={homePrice}
+            aria-labelledby="down-payment-slider"
           />
           <TextField
             label="Down payment"
             type="number"
             value={downPayment}
-            onChange={(e) => setDownPayment(Number(e.target.value))}
+            onChange={handleInputChange(setDownPayment)}
             fullWidth
             margin="normal"
-          />
-          <Slider
-            value={downPayment}
-            onChange={(e, newValue) => setDownPayment(newValue)}
-            max={homePrice}
-            aria-labelledby="down-payment-slider"
           />
           <Select
             value={loanLength}
@@ -68,16 +85,16 @@ const MortgageCalculator = () => {
             fullWidth
             margin="normal"
           >
-            <MenuItem value={30}>30 Years</MenuItem>
-            <MenuItem value={20}>20 Years</MenuItem>
-            <MenuItem value={15}>15 Years</MenuItem>
             <MenuItem value={10}>10 Years</MenuItem>
+            <MenuItem value={15}>15 Years</MenuItem>
+            <MenuItem value={20}>20 Years</MenuItem>
+            <MenuItem value={30}>30 Years</MenuItem>
           </Select>
           <TextField
             label="Interest rate"
             type="number"
             value={interestRate}
-            onChange={(e) => setInterestRate(Number(e.target.value))}
+            onChange={handleInputChange(setInterestRate)}
             fullWidth
             margin="normal"
           />
@@ -93,7 +110,7 @@ const MortgageCalculator = () => {
               label="Homeowner's insurance"
               type="number"
               value={insurance}
-              onChange={(e) => setInsurance(Number(e.target.value))}
+              onChange={handleInputChange(setInsurance)}
               fullWidth
               margin="normal"
             />
@@ -101,7 +118,7 @@ const MortgageCalculator = () => {
               label="Property tax"
               type="number"
               value={tax}
-              onChange={(e) => setTax(Number(e.target.value))}
+              onChange={handleInputChange(setTax)}
               fullWidth
               margin="normal"
             />
@@ -109,18 +126,18 @@ const MortgageCalculator = () => {
               label="HOA fees"
               type="number"
               value={hoa}
-              onChange={(e) => setHoa(Number(e.target.value))}
+              onChange={handleInputChange(setHoa)}
               fullWidth
               margin="normal"
             />
           </Collapse>
         </div>
         <div className="output-section">
-          <h5 v>${totalMonthlyPayment.toFixed(2)} Your estimated monthly payment</h5>
+          <h5>${totalMonthlyPayment.toFixed(2)} Your estimated monthly payment</h5>
           <div className="payment-breakdown">
             <Doughnut data={data} />
             <div className="payment-details">
-              <p >How is my monthly payment calculated?</p>
+              <p>How is my monthly payment calculated?</p>
               <ul>
                 <li>Principal & Interest: ${principalAndInterest.toFixed(2)}</li>
                 <li>Homeowner's Insurance: ${insurance.toFixed(2)}</li>
