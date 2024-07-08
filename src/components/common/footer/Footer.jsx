@@ -12,8 +12,11 @@ const Footer = () => {
             <p>Proudly Serving all of Texas and Colorado</p>
           </div>
           <div className="footer-center">
-            <p>626 Westwind Dr.<br />Allen, TX, 75002</p>
+            <p>2440 Texas Pkwy,Suite 213D<br />Missouri City, TX 77489</p>
             <p>Phone: (832) 888-6368</p>
+
+             
+
             <p>Email: <a href="mailto:contact@succedomortgage.com" className="footer-email">contact@succedomortgage.com</a></p>
           </div>
           <div className="footer-right">
